@@ -512,7 +512,7 @@
 </footer>
 
 
-<!-- ================= LEAD MODAL (升级版高吸睛弹窗) ================= -->
+<!-- ================= MULTI-STEP QUIZ LEAD MODAL ================= -->
 
 <div
   id="lead-modal"
@@ -529,78 +529,116 @@
       ✕
     </button>
 
-
-    <div class="mb-6 text-center">
-
-      <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
-        🔥 Free Strategy Audit
-      </span>
-
-      <h2 class="text-3xl font-black tracking-tight text-white">
-        Let's talk <span class="text-emerald-400 green-glow">growth.</span>
-      </h2>
-
-      <p class="text-zinc-400 text-xs mt-2 leading-relaxed">
-        Tell us a little about your business and we'll connect with you on WhatsApp.
-      </p>
-
+    <!-- PROGRESS BAR -->
+    <div class="w-full bg-white/10 h-1.5 rounded-full mb-6 overflow-hidden">
+      <div id="progress-bar" class="bg-emerald-400 h-full w-1/2 transition-all duration-300"></div>
     </div>
 
 
-    <form id="lead-form" class="space-y-3.5">
+    <form id="lead-form">
 
+      <!-- STEP 1: QUIZ QUESTION -->
+      <div id="step-1" class="space-y-4">
+        <div class="mb-4">
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-2">
+            Step 1 of 2
+          </span>
+          <h2 class="text-2xl font-black tracking-tight text-white">
+            What is your primary goal right now?
+          </h2>
+          <p class="text-zinc-400 text-xs mt-1">
+            Select an option to personalize your audit strategy.
+          </p>
+        </div>
 
-      <input
-        type="text"
-        id="name"
-        required
-        placeholder="Full Name *"
-        class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
-      >
+        <div class="space-y-2.5">
+          <button
+            type="button"
+            onclick="selectGoal('Scale Meta/Google Ads')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
+          >
+            <span>🚀 Scale Meta / Google Ads</span>
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">→</span>
+          </button>
 
+          <button
+            type="button"
+            onclick="selectGoal('Generate More Qualified Leads')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
+          >
+            <span>🎯 Generate More Qualified Leads</span>
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">→</span>
+          </button>
 
-      <input
-        type="email"
-        id="email"
-        required
-        placeholder="Business Email *"
-        class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
-      >
+          <button
+            type="button"
+            onclick="selectGoal('Lower Acquisition Cost (CPL/CPA)')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
+          >
+            <span>📉 Lower Acquisition Cost (CPL/CPA)</span>
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">→</span>
+          </button>
+        </div>
+      </div>
 
+      <!-- STEP 2: LEAD CONTACT INFO -->
+      <div id="step-2" class="hidden space-y-3.5">
+        <div class="mb-4">
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-2">
+            Step 2 of 2
+          </span>
+          <h2 class="text-2xl font-black tracking-tight text-white">
+            Where should we send your <span class="text-emerald-400 green-glow">Audit?</span>
+          </h2>
+          <p class="text-zinc-400 text-xs mt-1">
+            Fill in details below to continue to WhatsApp.
+          </p>
+        </div>
 
-      <input
-        type="tel"
-        id="phone"
-        required
-        placeholder="Phone / WhatsApp *"
-        class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
-      >
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder="Full Name *"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+        >
 
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Business Email *"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+        >
 
-      <input
-        type="text"
-        id="company"
-        placeholder="Website / Company"
-        class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
-      >
+        <input
+          type="tel"
+          id="phone"
+          required
+          placeholder="Phone / WhatsApp *"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+        >
 
+        <input
+          type="text"
+          id="company"
+          placeholder="Website / Company"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+        >
 
-      <button
-        type="submit"
-        id="submit-btn"
-        class="w-full bg-emerald-400 hover:bg-emerald-300 text-black font-black py-4 rounded-xl transition-all transform active:scale-95 text-sm tracking-wide uppercase mt-3 animate-pulse-glow"
-      >
-        SUBMIT & CONTINUE TO WHATSAPP →
-      </button>
+        <button
+          type="submit"
+          id="submit-btn"
+          class="w-full bg-emerald-400 hover:bg-emerald-300 text-black font-black py-4 rounded-xl transition-all transform active:scale-95 text-sm tracking-wide uppercase mt-3 animate-pulse-glow"
+        >
+          SUBMIT & CONTINUE TO WHATSAPP →
+        </button>
 
-
-      <!-- PRIVACY / WHATSAPP CONSENT -->
-
-      <p class="text-[10px] text-zinc-500 text-center mt-2 leading-relaxed">
-        By submitting, you agree to receive WhatsApp communications.
-        We respect your privacy and never share your details with third parties.
-      </p>
-
+        <p class="text-[10px] text-zinc-500 text-center mt-2 leading-relaxed">
+          By submitting, you agree to receive WhatsApp communications.
+          We respect your privacy and never share your details.
+        </p>
+      </div>
 
     </form>
 
@@ -664,39 +702,40 @@ var WHATSAPP_NUMBER =
 
 
 /* ==================================================
-   START TIME
+   STATE & START TIME
 ================================================== */
 
 var startTime = Date.now();
-
 var hasPoppedUp = false;
+var selectedGoal = "";
 
 
 /* ==================================================
-   MODAL
+   MODAL & MULTI-STEP LOGIC
 ================================================== */
 
-var modal =
-document.getElementById("lead-modal");
-
+var modal = document.getElementById("lead-modal");
 
 function openModal() {
-
   modal.classList.remove("hidden");
-
   modal.classList.add("flex");
-
   hasPoppedUp = true;
-
 }
 
-
 function closeModal() {
-
   modal.classList.add("hidden");
-
   modal.classList.remove("flex");
+}
 
+function selectGoal(goal) {
+  selectedGoal = goal;
+  
+  // 切换到 Step 2
+  document.getElementById("step-1").classList.add("hidden");
+  document.getElementById("step-2").classList.remove("hidden");
+  
+  // 更新进度条到 100%
+  document.getElementById("progress-bar").style.width = "100%";
 }
 
 
@@ -705,276 +744,106 @@ function closeModal() {
 ================================================== */
 
 function getUrlParam(param) {
-
-  var params =
-    new URLSearchParams(
-      window.location.search
-    );
-
+  var params = new URLSearchParams(window.location.search);
   return params.get(param) || "Direct/None";
-
 }
 
 
 /* ==================================================
-   EXIT INTENT
+   EXIT INTENT & AUTO POPUP
 ================================================== */
 
-document.addEventListener(
-  "mouseleave",
-  function(e) {
-
-    if (
-      e.clientY < 10 &&
-      !hasPoppedUp
-    ) {
-
-      openModal();
-
-    }
-
+document.addEventListener("mouseleave", function(e) {
+  if (e.clientY < 10 && !hasPoppedUp) {
+    openModal();
   }
-);
+});
 
-
-/* ==================================================
-   AUTO POPUP
-================================================== */
-
-setTimeout(
-  function() {
-
-    if (!hasPoppedUp) {
-
-      openModal();
-
-    }
-
-  },
-  12000
-);
+setTimeout(function() {
+  if (!hasPoppedUp) {
+    openModal();
+  }
+}, 12000);
 
 
 /* ==================================================
    FORM ELEMENTS
 ================================================== */
 
-var form =
-document.getElementById("lead-form");
-
-var submitBtn =
-document.getElementById("submit-btn");
-
-var statusMsg =
-document.getElementById("status-msg");
-
-var fallbackContainer =
-document.getElementById("fallback-container");
-
-var waFallbackBtn =
-document.getElementById("wa-fallback-btn");
+var form = document.getElementById("lead-form");
+var submitBtn = document.getElementById("submit-btn");
+var statusMsg = document.getElementById("status-msg");
+var fallbackContainer = document.getElementById("fallback-container");
+var waFallbackBtn = document.getElementById("wa-fallback-btn");
 
 
 /* ==================================================
    FORM SUBMIT
 ================================================== */
 
-form.addEventListener(
-  "submit",
-  function(e) {
-
-    e.preventDefault();
-
-
-    submitBtn.disabled = true;
-
-    submitBtn.innerText =
-      "PROCESSING...";
-
-
-    /* =========================
-       GET FORM DATA
-    ========================= */
-
-    var name =
-      document.getElementById("name")
-      .value
-      .trim();
-
-
-    var email =
-      document.getElementById("email")
-      .value
-      .trim();
-
-
-    var phone =
-      document.getElementById("phone")
-      .value
-      .trim();
-
-
-    var company =
-      document.getElementById("company")
-      .value
-      .trim();
-
-
-    var timeSpent =
-      Math.round(
-        (
-          Date.now() -
-          startTime
-        ) / 1000
-      );
-
-
-    /* =========================
-       DATA FOR GOOGLE SHEET
-    ========================= */
-
-    var data = {
-
-      name: name,
-
-      email: email,
-
-      phone: phone,
-
-      company: company,
-
-      source:
-        getUrlParam("utm_source"),
-
-      medium:
-        getUrlParam("utm_medium"),
-
-      campaign:
-        getUrlParam("utm_campaign"),
-
-      content:
-        getUrlParam("utm_content"),
-
-      device:
-        navigator.userAgent,
-
-      language:
-        navigator.language,
-
-      timeSpent:
-        timeSpent + "s"
-
-    };
-
-
-    /* =========================
-       WHATSAPP MESSAGE
-    ========================= */
-
-    var message =
-      "Hi MetricScore Media! " +
-      "I just requested a free strategy audit.\n\n" +
-
-      "Name: " +
-      name +
-      "\n" +
-
-      "Email: " +
-      email +
-      "\n" +
-
-      "Phone: " +
-      phone +
-      "\n" +
-
-      "Company / Website: " +
-      (company || "N/A");
-
-
-    var waUrl =
-      "https://wa.me/" +
-      WHATSAPP_NUMBER +
-      "?text=" +
-      encodeURIComponent(message);
-
-
-    waFallbackBtn.href =
-      waUrl;
-
-
-    /* =========================
-       SEND TO GOOGLE SHEET
-    ========================= */
-
-    fetch(
-      GOOGLE_SCRIPT_URL,
-      {
-
-        method: "POST",
-
-        mode: "no-cors",
-
-        headers: {
-          "Content-Type":
-            "text/plain;charset=utf-8"
-        },
-
-        body:
-          JSON.stringify(data)
-
-      }
-    )
-    .then(
-      function() {
-
-        fallbackContainer.classList.remove(
-          "hidden"
-        );
-
-
-        submitBtn.innerText =
-          "OPENING WHATSAPP...";
-
-
-        /* =========================
-           OPEN WHATSAPP
-        ========================= */
-
-        window.location.href =
-          waUrl;
-
-      }
-    )
-    .catch(
-      function(error) {
-
-        console.error(
-          "Google Apps Script Error:",
-          error
-        );
-
-
-        statusMsg.innerText =
-          "Something went wrong. Please try again.";
-
-
-        statusMsg.classList.remove(
-          "hidden"
-        );
-
-
-        submitBtn.disabled =
-          false;
-
-
-        submitBtn.innerText =
-          "SUBMIT & CONTINUE TO WHATSAPP →";
-
-      }
-    );
-
-  }
-);
+form.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  submitBtn.disabled = true;
+  submitBtn.innerText = "PROCESSING...";
+
+  var name = document.getElementById("name").value.trim();
+  var email = document.getElementById("email").value.trim();
+  var phone = document.getElementById("phone").value.trim();
+  var company = document.getElementById("company").value.trim();
+
+  var timeSpent = Math.round((Date.now() - startTime) / 1000);
+
+  /* DATA FOR GOOGLE SHEET */
+  var data = {
+    goal: selectedGoal,
+    name: name,
+    email: email,
+    phone: phone,
+    company: company,
+    source: getUrlParam("utm_source"),
+    medium: getUrlParam("utm_medium"),
+    campaign: getUrlParam("utm_campaign"),
+    content: getUrlParam("utm_content"),
+    device: navigator.userAgent,
+    language: navigator.language,
+    timeSpent: timeSpent + "s"
+  };
+
+  /* WHATSAPP MESSAGE */
+  var message =
+    "Hi MetricScore Media! " +
+    "I just requested a free strategy audit.\n\n" +
+    "Goal: " + selectedGoal + "\n" +
+    "Name: " + name + "\n" +
+    "Email: " + email + "\n" +
+    "Phone: " + phone + "\n" +
+    "Company / Website: " + (company || "N/A");
+
+  var waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+
+  waFallbackBtn.href = waUrl;
+
+  /* SEND TO GOOGLE SHEET */
+  fetch(GOOGLE_SCRIPT_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "text/plain;charset=utf-8" },
+    body: JSON.stringify(data)
+  })
+  .then(function() {
+    fallbackContainer.classList.remove("hidden");
+    submitBtn.innerText = "OPENING WHATSAPP...";
+    window.location.href = waUrl;
+  })
+  .catch(function(error) {
+    console.error("Google Apps Script Error:", error);
+    statusMsg.innerText = "Something went wrong. Please try again.";
+    statusMsg.classList.remove("hidden");
+    submitBtn.disabled = false;
+    submitBtn.innerText = "SUBMIT & CONTINUE TO WHATSAPP →";
+  });
+});
 
 </script>
 
