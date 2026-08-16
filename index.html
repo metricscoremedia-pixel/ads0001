@@ -49,20 +49,29 @@
       animation: pulse-glow 2s infinite;
     }
 
-    .quiz-option.selected {
-      border-color: rgb(52, 211, 153);
-      background: rgba(52, 211, 153, 0.12);
+    /* Better reading */
+    .section-heading {
+      line-height: 1.05;
     }
 
-    .quiz-option.selected .option-arrow {
-      opacity: 1;
+    .section-body {
+      font-size: 1.125rem;
+      line-height: 1.8;
+    }
+
+    @media (min-width: 768px) {
+      .section-body {
+        font-size: 1.25rem;
+      }
     }
   </style>
 </head>
 
 <body class="antialiased">
 
-<!-- ================= NAVIGATION ================= -->
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
 
 <nav class="fixed top-0 left-0 right-0 z-40 bg-black/60 backdrop-blur-xl border-b border-white/5">
 
@@ -77,7 +86,7 @@
       <div class="hidden md:flex items-center gap-8 text-sm text-zinc-400">
 
         <a href="#services" class="hover:text-white transition">
-          Services
+          What We Do
         </a>
 
         <a href="#process" class="hover:text-white transition">
@@ -85,7 +94,7 @@
         </a>
 
         <a href="#results" class="hover:text-white transition">
-          Results
+          Objective
         </a>
 
       </div>
@@ -104,7 +113,9 @@
 </nav>
 
 
-<!-- ================= HERO ================= -->
+<!-- =========================================================
+     HERO
+========================================================= -->
 
 <section class="relative min-h-screen flex items-center overflow-hidden pt-20">
 
@@ -115,6 +126,8 @@
   <div class="relative max-w-7xl mx-auto px-6 py-24 w-full">
 
     <div class="max-w-5xl">
+
+      <!-- INTRODUCTION -->
 
       <div class="inline-flex items-center gap-2 border border-white/10 bg-white/[0.03] rounded-full px-4 py-2 mb-8">
 
@@ -127,7 +140,9 @@
       </div>
 
 
-      <h1 class="text-6xl sm:text-7xl lg:text-[100px] font-black tracking-[-0.055em] leading-[0.88]">
+      <!-- MAIN HEADLINE -->
+
+      <h1 class="text-5xl sm:text-7xl lg:text-[100px] font-black tracking-[-0.055em] leading-[0.9]">
 
         TURN AD SPEND
 
@@ -140,25 +155,27 @@
       </h1>
 
 
-      <!-- ================= INTRODUCTION ================= -->
+      <!-- SIMPLE INTRODUCTION -->
 
-      <p class="mt-10 max-w-3xl text-lg sm:text-xl text-zinc-300 leading-relaxed">
+      <p class="mt-10 max-w-3xl text-lg sm:text-2xl text-zinc-400 leading-relaxed">
 
-        We help businesses turn paid advertising into predictable growth
-        through smarter campaigns, better funnels and continuous optimization.
-
-      </p>
-
-      <p class="mt-4 max-w-2xl text-sm sm:text-base text-zinc-500 leading-relaxed">
-
-        From lead generation to customer acquisition, we focus on the numbers
-        that actually matter — qualified leads, acquisition cost, conversion
-        and revenue.
+        MetricScore Media helps businesses turn paid advertising
+        into a predictable source of qualified leads, customers
+        and measurable revenue.
 
       </p>
 
 
-      <!-- ================= CTA ================= -->
+      <p class="mt-5 max-w-2xl text-base sm:text-lg text-zinc-500 leading-relaxed">
+
+        We combine paid media, lead generation and conversion
+        optimization to build marketing systems designed for
+        profitable growth.
+
+      </p>
+
+
+      <!-- CTA -->
 
       <div class="mt-10 flex flex-col sm:flex-row gap-4">
 
@@ -174,7 +191,7 @@
           href="#services"
           class="border border-white/10 bg-white/[0.03] px-8 py-4 rounded-full font-semibold text-zinc-300 hover:text-white hover:border-white/20 transition text-center"
         >
-          Explore Services
+          Explore What We Do
         </a>
 
       </div>
@@ -182,33 +199,48 @@
     </div>
 
 
-    <!-- ================= HERO STATS ================= -->
+    <!-- HERO SERVICES -->
 
-    <div class="mt-24 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 pt-8">
+    <div class="mt-24 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 pt-8 gap-y-8">
 
       <div>
-        <div class="text-3xl font-black">Paid</div>
+        <div class="text-3xl sm:text-4xl font-black">
+          Paid
+        </div>
+
         <div class="text-xs text-zinc-500 uppercase tracking-widest mt-2">
           Media
         </div>
       </div>
 
+
       <div>
-        <div class="text-3xl font-black">Lead</div>
+        <div class="text-3xl sm:text-4xl font-black">
+          Lead
+        </div>
+
         <div class="text-xs text-zinc-500 uppercase tracking-widest mt-2">
           Generation
         </div>
       </div>
 
+
       <div>
-        <div class="text-3xl font-black">CRO</div>
+        <div class="text-3xl sm:text-4xl font-black">
+          CRO
+        </div>
+
         <div class="text-xs text-zinc-500 uppercase tracking-widest mt-2">
           Conversion
         </div>
       </div>
 
+
       <div>
-        <div class="text-3xl font-black">Scale</div>
+        <div class="text-3xl sm:text-4xl font-black">
+          Scale
+        </div>
+
         <div class="text-xs text-zinc-500 uppercase tracking-widest mt-2">
           Profitably
         </div>
@@ -221,19 +253,21 @@
 </section>
 
 
-<!-- ================= SERVICES ================= -->
+<!-- =========================================================
+     WHAT WE DO
+========================================================= -->
 
 <section id="services" class="py-32 border-t border-white/10">
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <div class="max-w-2xl mb-16">
+    <div class="max-w-3xl mb-20">
 
-      <p class="text-emerald-400 text-xs uppercase tracking-[0.25em] font-bold">
+      <p class="text-emerald-400 text-sm uppercase tracking-[0.25em] font-bold">
         What We Do
       </p>
 
-      <h2 class="text-4xl sm:text-6xl font-black tracking-tight mt-4">
+      <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight mt-5 section-heading">
 
         Built around
 
@@ -243,60 +277,84 @@
 
       </h2>
 
+      <p class="section-body text-zinc-400 mt-8 max-w-3xl">
+
+        We focus on the parts of your marketing system that directly
+        affect growth — acquiring the right people, converting them
+        into leads or customers and continuously improving the economics
+        behind your campaigns.
+
+      </p>
+
     </div>
 
 
+    <!-- SERVICES -->
+
     <div class="grid md:grid-cols-3 gap-px bg-white/10">
 
-      <div class="bg-[#080808] p-8 sm:p-10 min-h-[320px] hover:bg-[#0c0c0c] transition">
 
-        <div class="text-emerald-400 text-sm font-bold mb-16">
+      <!-- SERVICE 01 -->
+
+      <div class="bg-[#080808] p-8 sm:p-12 min-h-[360px] hover:bg-[#0c0c0c] transition">
+
+        <div class="text-emerald-400 text-base font-bold mb-20">
           01
         </div>
 
-        <h3 class="text-2xl font-bold">
+        <h3 class="text-3xl sm:text-4xl font-black">
           Paid Media
         </h3>
 
-        <p class="text-zinc-500 mt-4 leading-relaxed">
-          Meta advertising systems designed around acquisition,
-          conversion and profitable growth.
+        <p class="text-zinc-400 text-lg leading-relaxed mt-5">
+
+          Meta and Google advertising systems designed around
+          acquisition, conversion and profitable growth.
+
         </p>
 
       </div>
 
 
-      <div class="bg-[#080808] p-8 sm:p-10 min-h-[320px] hover:bg-[#0c0c0c] transition">
+      <!-- SERVICE 02 -->
 
-        <div class="text-emerald-400 text-sm font-bold mb-16">
+      <div class="bg-[#080808] p-8 sm:p-12 min-h-[360px] hover:bg-[#0c0c0c] transition">
+
+        <div class="text-emerald-400 text-base font-bold mb-20">
           02
         </div>
 
-        <h3 class="text-2xl font-bold">
+        <h3 class="text-3xl sm:text-4xl font-black">
           Lead Generation
         </h3>
 
-        <p class="text-zinc-500 mt-4 leading-relaxed">
+        <p class="text-zinc-400 text-lg leading-relaxed mt-5">
+
           Turn traffic into qualified leads with optimized funnels,
           landing pages and WhatsApp lead flows.
+
         </p>
 
       </div>
 
 
-      <div class="bg-[#080808] p-8 sm:p-10 min-h-[320px] hover:bg-[#0c0c0c] transition">
+      <!-- SERVICE 03 -->
 
-        <div class="text-emerald-400 text-sm font-bold mb-16">
+      <div class="bg-[#080808] p-8 sm:p-12 min-h-[360px] hover:bg-[#0c0c0c] transition">
+
+        <div class="text-emerald-400 text-base font-bold mb-20">
           03
         </div>
 
-        <h3 class="text-2xl font-bold">
+        <h3 class="text-3xl sm:text-4xl font-black">
           Optimization
         </h3>
 
-        <p class="text-zinc-500 mt-4 leading-relaxed">
+        <p class="text-zinc-400 text-lg leading-relaxed mt-5">
+
           Continuous testing and optimization focused on lowering
-          acquisition costs and improving conversion.
+          acquisition costs and improving conversion performance.
+
         </p>
 
       </div>
@@ -308,23 +366,28 @@
 </section>
 
 
-<!-- ================= RESULTS ================= -->
+<!-- =========================================================
+     THE OBJECTIVE
+========================================================= -->
 
 <section id="results" class="py-32">
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <div class="border border-white/10 rounded-3xl p-8 sm:p-14">
+    <div class="border border-white/10 rounded-3xl p-8 sm:p-14 lg:p-16">
 
       <div class="grid lg:grid-cols-2 gap-16 items-center">
 
+
+        <!-- LEFT -->
+
         <div>
 
-          <p class="text-emerald-400 text-xs uppercase tracking-[0.25em] font-bold">
+          <p class="text-emerald-400 text-sm uppercase tracking-[0.25em] font-bold">
             The Objective
           </p>
 
-          <h2 class="text-4xl sm:text-6xl font-black tracking-tight mt-5">
+          <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-tight mt-6 section-heading">
 
             Stop buying
 
@@ -334,72 +397,86 @@
 
           </h2>
 
-          <p class="text-zinc-400 mt-6 leading-relaxed max-w-xl">
+
+          <p class="section-body text-zinc-400 mt-8 max-w-xl">
 
             Every campaign should have a measurable business objective.
-            We focus on qualified leads, acquisition cost,
-            conversion and revenue.
+            We focus on qualified leads, acquisition cost, conversion
+            performance and revenue — not vanity metrics.
 
           </p>
 
+
+          <p class="section-body text-zinc-400 mt-5 max-w-xl">
+
+            The goal is simple: build a marketing system where your
+            advertising spend produces meaningful business results
+            and can be improved over time.
+
+          </p>
+
+
           <button
             onclick="openModal()"
-            class="mt-8 bg-white text-black font-bold px-7 py-3.5 rounded-full hover:bg-emerald-400 transition"
+            class="mt-10 bg-white text-black font-bold text-base px-8 py-4 rounded-full hover:bg-emerald-400 transition"
           >
-            Request an Audit →
+            REQUEST AN AUDIT →
           </button>
 
         </div>
 
 
-        <div class="grid grid-cols-2 gap-4">
+        <!-- RIGHT METRICS -->
 
-          <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
+        <div class="grid grid-cols-2 gap-5">
 
-            <div class="text-4xl font-black green-glow">
+
+          <div class="border border-white/10 rounded-2xl p-7 sm:p-8 bg-white/[0.02]">
+
+            <div class="text-4xl sm:text-5xl font-black green-glow">
               ROAS
             </div>
 
-            <p class="text-zinc-500 text-sm mt-3">
+            <p class="text-zinc-400 text-base sm:text-lg mt-4">
               Revenue efficiency
             </p>
 
           </div>
 
 
-          <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
+          <div class="border border-white/10 rounded-2xl p-7 sm:p-8 bg-white/[0.02]">
 
-            <div class="text-4xl font-black green-glow">
+            <div class="text-4xl sm:text-5xl font-black green-glow">
               CPL
             </div>
 
-            <p class="text-zinc-500 text-sm mt-3">
+            <p class="text-zinc-400 text-base sm:text-lg mt-4">
               Acquisition cost
             </p>
 
           </div>
 
 
-          <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
+          <div class="border border-white/10 rounded-2xl p-7 sm:p-8 bg-white/[0.02]">
 
-            <div class="text-4xl font-black green-glow">
+            <div class="text-4xl sm:text-5xl font-black green-glow">
               CTR
             </div>
 
-            <p class="text-zinc-500 text-sm mt-3">
+            <p class="text-zinc-400 text-base sm:text-lg mt-4">
               Creative efficiency
             </p>
 
           </div>
 
 
-          <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
+          <div class="border border-white/10 rounded-2xl p-7 sm:p-8 bg-white/[0.02]">
 
-            <div class="text-4xl font-black green-glow">
+            <div class="text-4xl sm:text-5xl font-black green-glow">
               CRO
             </div>
 
-            <p class="text-zinc-500 text-sm mt-3">
+            <p class="text-zinc-400 text-base sm:text-lg mt-4">
               Conversion performance
             </p>
 
@@ -416,7 +493,9 @@
 </section>
 
 
-<!-- ================= PROCESS ================= -->
+<!-- =========================================================
+     OUR PROCESS
+========================================================= -->
 
 <section id="process" class="py-32 border-t border-white/10">
 
@@ -424,13 +503,16 @@
 
     <div class="grid lg:grid-cols-2 gap-20">
 
+
+      <!-- LEFT -->
+
       <div>
 
-        <p class="text-emerald-400 text-xs uppercase tracking-[0.25em] font-bold">
+        <p class="text-emerald-400 text-sm uppercase tracking-[0.25em] font-bold">
           Our Process
         </p>
 
-        <h2 class="text-4xl sm:text-6xl font-black mt-4 tracking-tight">
+        <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black mt-5 tracking-tight section-heading">
 
           Simple.
 
@@ -442,25 +524,42 @@
 
         </h2>
 
+
+        <p class="section-body text-zinc-400 mt-8 max-w-xl">
+
+          We keep the process straightforward. First we understand
+          where you are, then we build the strategy, launch the
+          campaigns and continuously optimize based on real data.
+
+        </p>
+
       </div>
 
 
+      <!-- RIGHT -->
+
       <div>
 
-        <div class="border-t border-white/10 py-7 flex gap-8">
 
-          <span class="text-emerald-400 font-bold">
+        <!-- PROCESS 01 -->
+
+        <div class="border-t border-white/10 py-8 flex gap-8">
+
+          <span class="text-emerald-400 font-bold text-lg">
             01
           </span>
 
           <div>
 
-            <h3 class="font-bold text-xl">
+            <h3 class="font-black text-2xl sm:text-3xl">
               Audit
             </h3>
 
-            <p class="text-zinc-500 mt-2">
-              Understand the current funnel, campaigns and acquisition economics.
+            <p class="text-zinc-400 text-lg leading-relaxed mt-3">
+
+              Understand the current funnel, campaigns,
+              tracking and acquisition economics.
+
             </p>
 
           </div>
@@ -468,20 +567,25 @@
         </div>
 
 
-        <div class="border-t border-white/10 py-7 flex gap-8">
+        <!-- PROCESS 02 -->
 
-          <span class="text-emerald-400 font-bold">
+        <div class="border-t border-white/10 py-8 flex gap-8">
+
+          <span class="text-emerald-400 font-bold text-lg">
             02
           </span>
 
           <div>
 
-            <h3 class="font-bold text-xl">
+            <h3 class="font-black text-2xl sm:text-3xl">
               Strategy
             </h3>
 
-            <p class="text-zinc-500 mt-2">
-              Build the audience, creative and campaign architecture.
+            <p class="text-zinc-400 text-lg leading-relaxed mt-3">
+
+              Build the audience, creative, funnel and
+              campaign architecture around your objectives.
+
             </p>
 
           </div>
@@ -489,20 +593,25 @@
         </div>
 
 
-        <div class="border-t border-white/10 py-7 flex gap-8">
+        <!-- PROCESS 03 -->
 
-          <span class="text-emerald-400 font-bold">
+        <div class="border-t border-white/10 py-8 flex gap-8">
+
+          <span class="text-emerald-400 font-bold text-lg">
             03
           </span>
 
           <div>
 
-            <h3 class="font-bold text-xl">
+            <h3 class="font-black text-2xl sm:text-3xl">
               Launch
             </h3>
 
-            <p class="text-zinc-500 mt-2">
-              Deploy campaigns and establish the measurement foundation.
+            <p class="text-zinc-400 text-lg leading-relaxed mt-3">
+
+              Deploy campaigns and establish the measurement
+              foundation needed to understand performance.
+
             </p>
 
           </div>
@@ -510,25 +619,31 @@
         </div>
 
 
-        <div class="border-t border-white/10 py-7 flex gap-8">
+        <!-- PROCESS 04 -->
 
-          <span class="text-emerald-400 font-bold">
+        <div class="border-t border-white/10 py-8 flex gap-8">
+
+          <span class="text-emerald-400 font-bold text-lg">
             04
           </span>
 
           <div>
 
-            <h3 class="font-bold text-xl">
+            <h3 class="font-black text-2xl sm:text-3xl">
               Optimize
             </h3>
 
-            <p class="text-zinc-500 mt-2">
-              Read the data, test aggressively and scale what works.
+            <p class="text-zinc-400 text-lg leading-relaxed mt-3">
+
+              Read the data, test aggressively and scale
+              what works while cutting what does not.
+
             </p>
 
           </div>
 
         </div>
+
 
       </div>
 
@@ -539,17 +654,19 @@
 </section>
 
 
-<!-- ================= FINAL CTA ================= -->
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
 
 <section class="py-32">
 
   <div class="max-w-5xl mx-auto px-6 text-center">
 
-    <p class="text-emerald-400 text-xs uppercase tracking-[0.25em] font-bold">
+    <p class="text-emerald-400 text-sm uppercase tracking-[0.25em] font-bold">
       Ready to Scale?
     </p>
 
-    <h2 class="text-5xl sm:text-7xl font-black tracking-[-0.04em] mt-5">
+    <h2 class="text-5xl sm:text-7xl lg:text-8xl font-black tracking-[-0.04em] mt-6 leading-[0.95]">
 
       Your next growth
 
@@ -560,6 +677,14 @@
       </span>
 
     </h2>
+
+
+    <p class="text-zinc-400 text-lg sm:text-xl mt-8 max-w-2xl mx-auto leading-relaxed">
+
+      Find out where your current marketing system can improve
+      and what opportunities may be available for growth.
+
+    </p>
 
 
     <button
@@ -574,7 +699,9 @@
 </section>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer class="border-t border-white/10 py-10">
 
@@ -593,20 +720,19 @@
 </footer>
 
 
-<!-- ==================================================
-     MULTI-STEP QUIZ LEAD MODAL
-================================================== -->
+<!-- =========================================================
+     MULTI-STEP QUIZ MODAL
+========================================================= -->
 
 <div
   id="lead-modal"
-  class="fixed inset-0 z-50 hidden items-center justify-center p-5 modal-bg overflow-y-auto"
+  class="fixed inset-0 z-50 hidden items-center justify-center p-5 modal-bg"
 >
 
-  <div
-    class="w-full max-w-md bg-[#0d0f12] border-2 border-emerald-400/60 rounded-3xl p-7 sm:p-9 relative shadow-[0_0_50px_rgba(52,211,153,0.3)] my-8"
-  >
+  <div class="w-full max-w-md max-h-[90vh] overflow-y-auto bg-[#0d0f12] border-2 border-emerald-400/60 rounded-3xl p-7 sm:p-9 relative shadow-[0_0_50px_rgba(52,211,153,0.3)]">
 
-    <!-- CLOSE BUTTON -->
+
+    <!-- CLOSE -->
 
     <button
       onclick="closeModal()"
@@ -617,36 +743,15 @@
     </button>
 
 
-    <!-- PROGRESS BAR -->
+    <!-- PROGRESS -->
 
-    <div class="w-full bg-white/10 h-1.5 rounded-full mb-6 overflow-hidden">
+    <div class="w-full bg-white/10 h-1.5 rounded-full mb-7 overflow-hidden">
 
       <div
         id="progress-bar"
         class="bg-emerald-400 h-full transition-all duration-300"
-        style="width: 16.66%;"
+        style="width: 33.33%;"
       ></div>
-
-    </div>
-
-
-    <!-- PROGRESS TEXT -->
-
-    <div class="flex justify-between items-center mb-6">
-
-      <span
-        id="step-label"
-        class="text-[11px] uppercase tracking-[0.2em] text-emerald-300 font-bold"
-      >
-        Step 1 of 6
-      </span>
-
-      <span
-        id="progress-percent"
-        class="text-[11px] text-zinc-500"
-      >
-        17%
-      </span>
 
     </div>
 
@@ -654,46 +759,48 @@
     <form id="lead-form">
 
 
-      <!-- ==================================================
+      <!-- =====================================================
            STEP 1
-      ================================================== -->
+      ====================================================== -->
 
-      <div
-        id="step-1"
-        class="quiz-step space-y-4"
-      >
+      <div id="step-1" class="space-y-4">
 
         <div class="mb-5">
 
           <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
-            Step 1 of 6
+            Step 1 of 3
           </span>
 
-          <h2 class="text-2xl font-black tracking-tight text-white">
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-white">
+
             What is your primary goal right now?
+
           </h2>
 
-          <p class="text-zinc-400 text-xs mt-2">
+          <p class="text-zinc-400 text-sm mt-2">
+
             Select the option that best describes what you want to improve.
+
           </p>
 
         </div>
 
 
-        <div class="space-y-2.5">
+        <div class="space-y-3">
+
 
           <button
             type="button"
-            onclick="selectOption(1, 'goal', 'Scale Meta / Google Ads')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+            onclick="selectGoal('Scale Meta / Google Ads')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-4 text-sm font-semibold text-white transition flex justify-between items-center group"
           >
 
             <span>
               🚀 Scale Meta / Google Ads
             </span>
 
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
+              →
             </span>
 
           </button>
@@ -701,16 +808,16 @@
 
           <button
             type="button"
-            onclick="selectOption(1, 'goal', 'Generate More Qualified Leads')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+            onclick="selectGoal('Generate More Qualified Leads')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-4 text-sm font-semibold text-white transition flex justify-between items-center group"
           >
 
             <span>
               🎯 Generate More Qualified Leads
             </span>
 
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
+              →
             </span>
 
           </button>
@@ -718,474 +825,122 @@
 
           <button
             type="button"
-            onclick="selectOption(1, 'goal', 'Lower Acquisition Cost (CPL / CPA)')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+            onclick="selectGoal('Lower Acquisition Cost')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-4 text-sm font-semibold text-white transition flex justify-between items-center group"
           >
 
             <span>
               📉 Lower Acquisition Cost (CPL / CPA)
             </span>
 
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
+              →
             </span>
 
           </button>
 
-
-          <button
-            type="button"
-            onclick="selectOption(1, 'goal', 'Increase Sales / Revenue')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-
-            <span>
-              💰 Increase Sales / Revenue
-            </span>
-
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-
-          </button>
 
         </div>
 
       </div>
 
 
-      <!-- ==================================================
+      <!-- =====================================================
            STEP 2
-      ================================================== -->
+      ====================================================== -->
 
-      <div
-        id="step-2"
-        class="quiz-step hidden space-y-4"
-      >
+      <div id="step-2" class="hidden space-y-4">
 
         <div class="mb-5">
 
           <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
-            Step 2 of 6
+            Step 2 of 3
           </span>
 
-          <h2 class="text-2xl font-black tracking-tight text-white">
-            What is your approximate monthly ad spend?
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-white">
+
+            What best describes your current situation?
+
           </h2>
 
-          <p class="text-zinc-400 text-xs mt-2">
-            This helps us understand your current acquisition scale.
+          <p class="text-zinc-400 text-sm mt-2">
+
+            This helps us understand where you are starting from.
+
           </p>
 
         </div>
 
 
-        <div class="space-y-2.5">
+        <div class="space-y-3">
+
 
           <button
             type="button"
-            onclick="selectOption(2, 'adSpend', 'Under RM3,000')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+            onclick="selectSituation('Already running ads but want better results')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-4 text-sm font-semibold text-white transition"
           >
-            <span>
-              Under RM3,000
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
+            📊 Already running ads but want better results
           </button>
 
 
           <button
             type="button"
-            onclick="selectOption(2, 'adSpend', 'RM3,000 - RM10,000')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+            onclick="selectSituation('Currently generating leads manually')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-4 text-sm font-semibold text-white transition"
           >
-            <span>
-              RM3,000 – RM10,000
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
+            👥 Currently generating leads manually
           </button>
 
 
           <button
             type="button"
-            onclick="selectOption(2, 'adSpend', 'RM10,000 - RM30,000')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+            onclick="selectSituation('Planning to start paid advertising')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-4 text-sm font-semibold text-white transition"
           >
-            <span>
-              RM10,000 – RM30,000
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
+            🚀 Planning to start paid advertising
           </button>
 
 
           <button
             type="button"
-            onclick="selectOption(2, 'adSpend', 'RM30,000+')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+            onclick="selectSituation('Need help improving conversion')"
+            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-4 text-sm font-semibold text-white transition"
           >
-            <span>
-              RM30,000+
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
+            🔥 Need help improving conversion
           </button>
 
-
-          <button
-            type="button"
-            onclick="selectOption(2, 'adSpend', 'Not running paid ads yet')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              Not running paid ads yet
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
 
         </div>
 
       </div>
 
 
-      <!-- ==================================================
+      <!-- =====================================================
            STEP 3
-      ================================================== -->
+      ====================================================== -->
 
-      <div
-        id="step-3"
-        class="quiz-step hidden space-y-4"
-      >
+      <div id="step-3" class="hidden space-y-3.5">
 
         <div class="mb-5">
 
           <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
-            Step 3 of 6
+            Step 3 of 3
           </span>
 
-          <h2 class="text-2xl font-black tracking-tight text-white">
-            How many leads do you generate each month?
-          </h2>
+          <h2 class="text-2xl sm:text-3xl font-black tracking-tight text-white">
 
-          <p class="text-zinc-400 text-xs mt-2">
-            An approximate number is perfectly fine.
-          </p>
-
-        </div>
-
-
-        <div class="space-y-2.5">
-
-          <button
-            type="button"
-            onclick="selectOption(3, 'leadVolume', 'Under 20 leads / month')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              Under 20 leads / month
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(3, 'leadVolume', '20 - 50 leads / month')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              20 – 50 leads / month
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(3, 'leadVolume', '50 - 100 leads / month')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              50 – 100 leads / month
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(3, 'leadVolume', '100+ leads / month')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              100+ leads / month
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(3, 'leadVolume', 'Not generating leads yet')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              Not generating leads yet
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- ==================================================
-           STEP 4
-      ================================================== -->
-
-      <div
-        id="step-4"
-        class="quiz-step hidden space-y-4"
-      >
-
-        <div class="mb-5">
-
-          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
-            Step 4 of 6
-          </span>
-
-          <h2 class="text-2xl font-black tracking-tight text-white">
-            What is your biggest marketing problem?
-          </h2>
-
-          <p class="text-zinc-400 text-xs mt-2">
-            Choose the problem that is hurting growth the most.
-          </p>
-
-        </div>
-
-
-        <div class="space-y-2.5">
-
-          <button
-            type="button"
-            onclick="selectOption(4, 'problem', 'Ads are not converting')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              ❌ Ads are not converting
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(4, 'problem', 'Leads are too expensive')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              📉 Leads are too expensive
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(4, 'problem', 'Leads are not qualified')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              🎯 Leads are not qualified
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(4, 'problem', 'Not enough leads')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              📊 Not enough leads
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(4, 'problem', 'I do not know what is working')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              🤔 I don't know what's working
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- ==================================================
-           STEP 5
-      ================================================== -->
-
-      <div
-        id="step-5"
-        class="quiz-step hidden space-y-4"
-      >
-
-        <div class="mb-5">
-
-          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
-            Step 5 of 6
-          </span>
-
-          <h2 class="text-2xl font-black tracking-tight text-white">
-            Which platforms are you currently using?
-          </h2>
-
-          <p class="text-zinc-400 text-xs mt-2">
-            Select the platform closest to your current setup.
-          </p>
-
-        </div>
-
-
-        <div class="space-y-2.5">
-
-          <button
-            type="button"
-            onclick="selectOption(5, 'platform', 'Meta Ads')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              📱 Meta Ads
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(5, 'platform', 'Google Ads')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              🔎 Google Ads
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(5, 'platform', 'Meta + Google Ads')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              🚀 Meta + Google Ads
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(5, 'platform', 'Other Paid Advertising')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              🌐 Other paid advertising
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-
-          <button
-            type="button"
-            onclick="selectOption(5, 'platform', 'Not running ads yet')"
-            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
-          >
-            <span>
-              🌱 Not running ads yet
-            </span>
-            <span class="option-arrow text-emerald-400 opacity-0 transition">
-              ✓
-            </span>
-          </button>
-
-        </div>
-
-      </div>
-
-
-      <!-- ==================================================
-           STEP 6 - CONTACT
-      ================================================== -->
-
-      <div
-        id="step-6"
-        class="quiz-step hidden space-y-3.5"
-      >
-
-        <div class="mb-5">
-
-          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
-            Step 6 of 6
-          </span>
-
-          <h2 class="text-2xl font-black tracking-tight text-white">
-            Let's prepare your
+            Where should we send your
             <span class="text-emerald-400 green-glow">
-              free audit.
+              Audit?
             </span>
+
           </h2>
 
-          <p class="text-zinc-400 text-xs mt-2">
-            Enter your details and we'll continue with you on WhatsApp.
+          <p class="text-zinc-400 text-sm mt-2">
+
+            Fill in your details to continue to WhatsApp.
+
           </p>
 
         </div>
@@ -1198,20 +953,18 @@
           id="name"
           required
           placeholder="Full Name *"
-          autocomplete="name"
-          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
 
-        <!-- EMAIL -->
+        <!-- BUSINESS EMAIL -->
 
         <input
           type="email"
           id="email"
           required
-          placeholder="Business Email / Email *"
-          autocomplete="email"
-          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+          placeholder="Business Email *"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
 
@@ -1222,19 +975,17 @@
           id="phone"
           required
           placeholder="Phone / WhatsApp *"
-          autocomplete="tel"
-          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
 
-        <!-- COMPANY OPTIONAL -->
+        <!-- OPTIONAL COMPANY -->
 
         <input
           type="text"
           id="company"
           placeholder="Website / Company (Optional)"
-          autocomplete="organization"
-          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
+          class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3.5 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
 
@@ -1250,51 +1001,23 @@
 
 
         <p class="text-[10px] text-zinc-500 text-center mt-2 leading-relaxed">
+
           By submitting, you agree to receive WhatsApp communications.
           We respect your privacy and never share your details.
+
         </p>
 
       </div>
 
 
-      <!-- ==================================================
-           QUIZ NAVIGATION
-      ================================================== -->
-
-      <div
-        id="quiz-navigation"
-        class="hidden mt-6 pt-5 border-t border-white/10 flex items-center justify-between"
-      >
-
-        <button
-          type="button"
-          id="back-btn"
-          onclick="previousStep()"
-          class="text-sm font-semibold text-zinc-400 hover:text-white transition"
-        >
-          ← Back
-        </button>
-
-
-        <button
-          type="button"
-          id="next-btn"
-          onclick="nextStep()"
-          class="bg-white text-black font-bold text-sm px-6 py-2.5 rounded-full hover:bg-emerald-400 transition"
-        >
-          Continue →
-        </button>
-
-      </div>
-
     </form>
 
 
-    <!-- STATUS MESSAGE -->
+    <!-- STATUS -->
 
     <p
       id="status-msg"
-      class="hidden text-center text-xs mt-4 text-red-400 font-semibold"
+      class="hidden text-center text-xs mt-3 text-red-400 font-semibold"
     ></p>
 
 
@@ -1323,119 +1046,58 @@
 
 
     <p class="text-[9px] text-zinc-600 text-center mt-5">
+
       MetricScore Media is an independent marketing agency.
+
     </p>
+
 
   </div>
 
 </div>
 
 
-<!-- ==================================================
+<!-- =========================================================
      JAVASCRIPT
-================================================== -->
+========================================================= -->
 
 <script>
 
-/* ==================================================
+/* =========================================================
    GOOGLE APPS SCRIPT
-================================================== */
+========================================================= */
 
 var GOOGLE_SCRIPT_URL =
 "https://script.google.com/macros/s/AKfycbxmxMzVQioCiUOg8vll13HQajxgLTq2e3FUeFueTRWiPkf5CDS38SvMQdYjT2x9Peb91g/exec";
 
 
-/* ==================================================
+/* =========================================================
    WHATSAPP
-================================================== */
+========================================================= */
 
 var WHATSAPP_NUMBER =
 "60142406221";
 
 
-/* ==================================================
-   QUIZ SETTINGS
-================================================== */
-
-var TOTAL_STEPS = 6;
-
-var currentStep = 1;
-
-var hasPoppedUp = false;
+/* =========================================================
+   STATE
+========================================================= */
 
 var startTime = Date.now();
 
+var hasPoppedUp = false;
 
-/* ==================================================
-   QUIZ ANSWERS
-================================================== */
+var selectedGoal = "";
 
-var quizAnswers = {
-
-  goal: "",
-
-  adSpend: "",
-
-  leadVolume: "",
-
-  problem: "",
-
-  platform: ""
-
-};
+var selectedSituation = "";
 
 
-/* ==================================================
-   MOBILE DETECTION
-================================================== */
+/* =========================================================
+   MODAL
+========================================================= */
 
-function isMobileDevice() {
+var modal = document.getElementById("lead-modal");
 
-  return window.matchMedia(
-    "(max-width: 767px)"
-  ).matches;
-
-}
-
-
-/* ==================================================
-   MODAL ELEMENTS
-================================================== */
-
-var modal =
-document.getElementById("lead-modal");
-
-var progressBar =
-document.getElementById("progress-bar");
-
-var stepLabel =
-document.getElementById("step-label");
-
-var progressPercent =
-document.getElementById("progress-percent");
-
-var backBtn =
-document.getElementById("back-btn");
-
-var nextBtn =
-document.getElementById("next-btn");
-
-var quizNavigation =
-document.getElementById("quiz-navigation");
-
-var statusMsg =
-document.getElementById("status-msg");
-
-var fallbackContainer =
-document.getElementById("fallback-container");
-
-var waFallbackBtn =
-document.getElementById("wa-fallback-btn");
-
-
-/* ==================================================
-   OPEN MODAL
-================================================== */
 
 function openModal() {
 
@@ -1448,10 +1110,6 @@ function openModal() {
 }
 
 
-/* ==================================================
-   CLOSE MODAL
-================================================== */
-
 function closeModal() {
 
   modal.classList.add("hidden");
@@ -1461,673 +1119,399 @@ function closeModal() {
 }
 
 
-/* ==================================================
-   UPDATE PROGRESS
-================================================== */
+/* =========================================================
+   RESET QUIZ
+========================================================= */
 
-function updateProgress() {
+function resetQuiz() {
 
-  var percentage =
-    (currentStep / TOTAL_STEPS) * 100;
+  selectedGoal = "";
 
-  progressBar.style.width =
-    percentage + "%";
+  selectedSituation = "";
 
-  stepLabel.innerText =
-    "Step " +
-    currentStep +
-    " of " +
-    TOTAL_STEPS;
+  document.getElementById("step-1").classList.remove("hidden");
 
-  progressPercent.innerText =
-    Math.round(percentage) + "%";
+  document.getElementById("step-2").classList.add("hidden");
+
+  document.getElementById("step-3").classList.add("hidden");
+
+  document.getElementById("progress-bar").style.width = "33.33%";
+
+}
 
 
-  /*
-    Navigation is only shown on
-    Steps 2-5.
+/* =========================================================
+   STEP 1
+========================================================= */
 
-    Step 1 automatically advances
-    when an option is selected.
+function selectGoal(goal) {
 
-    Step 6 has the submit button.
-  */
+  selectedGoal = goal;
+
+  document.getElementById("step-1").classList.add("hidden");
+
+  document.getElementById("step-2").classList.remove("hidden");
+
+  document.getElementById("step-3").classList.add("hidden");
+
+  document.getElementById("progress-bar").style.width = "66.66%";
+
+}
+
+
+/* =========================================================
+   STEP 2
+========================================================= */
+
+function selectSituation(situation) {
+
+  selectedSituation = situation;
+
+  document.getElementById("step-2").classList.add("hidden");
+
+  document.getElementById("step-3").classList.remove("hidden");
+
+  document.getElementById("progress-bar").style.width = "100%";
+
+}
+
+
+/* =========================================================
+   UTM PARAMETERS
+========================================================= */
+
+function getUrlParam(param) {
+
+  var params = new URLSearchParams(window.location.search);
+
+  return params.get(param) || "Direct/None";
+
+}
+
+
+/* =========================================================
+   DEVICE DETECTION
+========================================================= */
+
+function isMobileDevice() {
+
+  return window.innerWidth <= 767 ||
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
+}
+
+
+/* =========================================================
+   MOBILE EXIT INTENT
+=========================================================
+
+   IMPORTANT:
+
+   Desktop mouse-leave exit intent has been removed.
+
+   Mobile devices do not have a reliable mouse cursor, so
+   this uses a mobile scroll-up behavior instead.
+
+   When the visitor scrolls upward significantly after
+   scrolling down, the popup can appear.
+
+========================================================= */
+
+var lastScrollPosition = window.scrollY;
+
+var mobileExitTriggered = false;
+
+
+window.addEventListener("scroll", function() {
+
+  if (!isMobileDevice()) {
+    lastScrollPosition = window.scrollY;
+    return;
+  }
+
+  if (hasPoppedUp || mobileExitTriggered) {
+    lastScrollPosition = window.scrollY;
+    return;
+  }
+
+  var currentScroll = window.scrollY;
+
+  var scrollingUp = currentScroll < lastScrollPosition;
+
+  var hasScrolledDownEnough = currentScroll > 250;
+
+  var scrollingUpEnough =
+    lastScrollPosition - currentScroll > 120;
+
 
   if (
-    currentStep >= 2 &&
-    currentStep <= 5
+    scrollingUp &&
+    hasScrolledDownEnough &&
+    scrollingUpEnough
   ) {
 
-    quizNavigation.classList.remove(
-      "hidden"
-    );
+    mobileExitTriggered = true;
 
-    quizNavigation.classList.add(
-      "flex"
-    );
-
-  } else {
-
-    quizNavigation.classList.add(
-      "hidden"
-    );
-
-    quizNavigation.classList.remove(
-      "flex"
-    );
+    openModal();
 
   }
 
 
-  if (currentStep === 2) {
+  lastScrollPosition = currentScroll;
 
-    backBtn.classList.remove(
-      "invisible"
-    );
-
-  }
+});
 
 
-  if (currentStep > 2) {
+/* =========================================================
+   12 SECOND AUTO POPUP
+========================================================= */
 
-    backBtn.classList.remove(
-      "invisible"
-    );
+setTimeout(function() {
 
-  }
+  if (!hasPoppedUp) {
 
-
-  if (currentStep === 2) {
-
-    backBtn.classList.add(
-      "invisible"
-    );
+    openModal();
 
   }
 
-
-  if (currentStep >= 2 && currentStep <= 5) {
-
-    nextBtn.innerText =
-      "Continue →";
-
-  }
-
-}
+}, 12000);
 
 
-/* ==================================================
-   SHOW STEP
-================================================== */
+/* =========================================================
+   FORM ELEMENTS
+========================================================= */
 
-function showStep(stepNumber) {
+var form = document.getElementById("lead-form");
 
-  document
-    .querySelectorAll(".quiz-step")
-    .forEach(function(step) {
+var submitBtn = document.getElementById("submit-btn");
 
-      step.classList.add("hidden");
+var statusMsg = document.getElementById("status-msg");
 
-    });
+var fallbackContainer =
+  document.getElementById("fallback-container");
 
-
-  var selectedStep =
-    document.getElementById(
-      "step-" + stepNumber
-    );
+var waFallbackBtn =
+  document.getElementById("wa-fallback-btn");
 
 
-  if (selectedStep) {
+/* =========================================================
+   FORM SUBMIT
+========================================================= */
 
-    selectedStep.classList.remove(
-      "hidden"
-    );
+form.addEventListener("submit", function(e) {
 
-  }
-
-
-  currentStep =
-    stepNumber;
+  e.preventDefault();
 
 
-  updateProgress();
+  /* Prevent duplicate submissions */
+
+  submitBtn.disabled = true;
+
+  submitBtn.innerText = "PROCESSING...";
 
 
-  statusMsg.classList.add(
-    "hidden"
-  );
+  /* GET FORM VALUES */
 
-}
-
-
-/* ==================================================
-   SELECT QUIZ OPTION
-================================================== */
-
-function selectOption(
-  stepNumber,
-  field,
-  value
-) {
-
-  quizAnswers[field] =
-    value;
+  var name =
+    document.getElementById("name").value.trim();
 
 
-  /*
-    Highlight selected button.
-  */
+  var email =
+    document.getElementById("email").value.trim();
 
-  var currentStepElement =
-    document.getElementById(
-      "step-" + stepNumber
+
+  var phone =
+    document.getElementById("phone").value.trim();
+
+
+  var company =
+    document.getElementById("company").value.trim();
+
+
+  /* TIME SPENT */
+
+  var timeSpent =
+    Math.round(
+      (Date.now() - startTime) / 1000
     );
 
 
-  currentStepElement
-    .querySelectorAll(".quiz-option")
-    .forEach(function(button) {
+  /* =======================================================
+     DATA FOR GOOGLE SHEET
+  ======================================================= */
 
-      button.classList.remove(
-        "selected"
-      );
+  var data = {
 
-    });
+    goal: selectedGoal,
 
+    situation: selectedSituation,
 
-  event.currentTarget.classList.add(
-    "selected"
-  );
+    name: name,
 
+    email: email,
 
-  /*
-    Step 1 automatically continues.
-  */
+    phone: phone,
 
-  if (stepNumber === 1) {
+    company: company,
 
-    setTimeout(function() {
+    source: getUrlParam("utm_source"),
 
-      showStep(2);
+    medium: getUrlParam("utm_medium"),
 
-    }, 180);
+    campaign: getUrlParam("utm_campaign"),
 
-  }
+    content: getUrlParam("utm_content"),
 
+    device: navigator.userAgent,
 
-  /*
-    Steps 2-5 wait for the
-    Continue button.
-  */
+    language: navigator.language,
 
-}
-
-
-/* ==================================================
-   NEXT STEP
-================================================== */
-
-function nextStep() {
-
-  if (currentStep >= 5) {
-
-    return;
-
-  }
-
-
-  var fieldMap = {
-
-    2: "adSpend",
-
-    3: "leadVolume",
-
-    4: "problem",
-
-    5: "platform"
+    timeSpent: timeSpent + "s"
 
   };
 
 
-  var currentField =
-    fieldMap[currentStep];
+  /* =======================================================
+     WHATSAPP MESSAGE
+  ======================================================= */
+
+  var message =
+    "Hi MetricScore Media! " +
+    "I just requested a free strategy audit.\n\n" +
+
+    "Goal: " +
+    selectedGoal +
+    "\n" +
+
+    "Current Situation: " +
+    selectedSituation +
+    "\n" +
+
+    "Name: " +
+    name +
+    "\n" +
+
+    "Business Email: " +
+    email +
+    "\n" +
+
+    "Phone: " +
+    phone +
+    "\n" +
+
+    "Company / Website: " +
+    (company || "N/A");
 
 
-  if (
-    currentField &&
-    !quizAnswers[currentField]
-  ) {
-
-    statusMsg.innerText =
-      "Please select an option to continue.";
-
-    statusMsg.classList.remove(
-      "hidden"
-    );
-
-    return;
-
-  }
+  var waUrl =
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(message);
 
 
-  showStep(
-    currentStep + 1
-  );
-
-}
+  waFallbackBtn.href = waUrl;
 
 
-/* ==================================================
-   PREVIOUS STEP
-================================================== */
+  /* =======================================================
+     SEND TO GOOGLE SHEET
+  ======================================================= */
 
-function previousStep() {
-
-  if (currentStep <= 1) {
-
-    return;
-
-  }
-
-
-  showStep(
-    currentStep - 1
-  );
-
-}
-
-
-/* ==================================================
-   MOBILE EXIT INTENT
-   BACK BUTTON
-================================================== */
-
-if (isMobileDevice()) {
-
-  /*
-    Add temporary history state.
-
-    The visitor remains on the same URL.
-  */
-
-  history.pushState(
+  fetch(
+    GOOGLE_SCRIPT_URL,
     {
-      metricScoreExitIntent: true
-    },
-    "",
-    window.location.href
-  );
+      method: "POST",
 
+      mode: "no-cors",
 
-  window.addEventListener(
-    "popstate",
-    function() {
+      headers: {
+        "Content-Type":
+          "text/plain;charset=utf-8"
+      },
 
-      /*
-        Only show the popup once.
-
-        The next back press will
-        allow the visitor to leave.
-      */
-
-      if (!hasPoppedUp) {
-
-        openModal();
-
-
-        history.pushState(
-          {
-            metricScoreExitIntent: true
-          },
-          "",
-          window.location.href
-        );
-
-      }
+      body: JSON.stringify(data)
 
     }
-  );
+  )
 
-}
+  .then(function() {
 
-
-/* ==================================================
-   UTM PARAMETERS
-================================================== */
-
-function getUrlParam(param) {
-
-  var params =
-    new URLSearchParams(
-      window.location.search
-    );
-
-  return (
-    params.get(param) ||
-    "Direct/None"
-  );
-
-}
-
-
-/* ==================================================
-   FORM ELEMENTS
-================================================== */
-
-var form =
-document.getElementById(
-  "lead-form"
-);
-
-var submitBtn =
-document.getElementById(
-  "submit-btn"
-);
-
-
-/* ==================================================
-   FORM SUBMIT
-================================================== */
-
-form.addEventListener(
-  "submit",
-  function(e) {
-
-    e.preventDefault();
-
-
-    /*
-      Make sure all quiz answers exist.
-    */
-
-    if (
-      !quizAnswers.goal ||
-      !quizAnswers.adSpend ||
-      !quizAnswers.leadVolume ||
-      !quizAnswers.problem ||
-      !quizAnswers.platform
-    ) {
-
-      statusMsg.innerText =
-        "Please complete the quiz before submitting.";
-
-      statusMsg.classList.remove(
-        "hidden"
-      );
-
-      return;
-
-    }
-
-
-    submitBtn.disabled = true;
+    fallbackContainer.classList.remove("hidden");
 
     submitBtn.innerText =
-      "PROCESSING...";
-
-
-    /* ==================================================
-       CONTACT INFORMATION
-    ================================================== */
-
-    var name =
-      document
-        .getElementById("name")
-        .value
-        .trim();
-
-
-    var email =
-      document
-        .getElementById("email")
-        .value
-        .trim();
-
-
-    var phone =
-      document
-        .getElementById("phone")
-        .value
-        .trim();
-
-
-    var company =
-      document
-        .getElementById("company")
-        .value
-        .trim();
-
-
-    var timeSpent =
-      Math.round(
-        (Date.now() - startTime) / 1000
-      );
-
-
-    /* ==================================================
-       GOOGLE SHEET DATA
-    ================================================== */
-
-    var data = {
-
-      goal:
-        quizAnswers.goal,
-
-      adSpend:
-        quizAnswers.adSpend,
-
-      leadVolume:
-        quizAnswers.leadVolume,
-
-      problem:
-        quizAnswers.problem,
-
-      platform:
-        quizAnswers.platform,
-
-      name:
-        name,
-
-      email:
-        email,
-
-      phone:
-        phone,
-
-      company:
-        company,
-
-      source:
-        getUrlParam("utm_source"),
-
-      medium:
-        getUrlParam("utm_medium"),
-
-      campaign:
-        getUrlParam("utm_campaign"),
-
-      content:
-        getUrlParam("utm_content"),
-
-      device:
-        navigator.userAgent,
-
-      language:
-        navigator.language,
-
-      timeSpent:
-        timeSpent + "s"
-
-    };
-
-
-    /* ==================================================
-       WHATSAPP MESSAGE
-    ================================================== */
-
-    var message =
-      "Hi MetricScore Media! " +
-      "I just requested a free strategy audit.\n\n" +
-
-      "PRIMARY GOAL\n" +
-      quizAnswers.goal +
-      "\n\n" +
-
-      "MONTHLY AD SPEND\n" +
-      quizAnswers.adSpend +
-      "\n\n" +
-
-      "MONTHLY LEADS\n" +
-      quizAnswers.leadVolume +
-      "\n\n" +
-
-      "BIGGEST MARKETING PROBLEM\n" +
-      quizAnswers.problem +
-      "\n\n" +
-
-      "CURRENT PLATFORM\n" +
-      quizAnswers.platform +
-      "\n\n" +
-
-      "CONTACT DETAILS\n" +
-      "Name: " +
-      name +
-      "\n" +
-
-      "Email: " +
-      email +
-      "\n" +
-
-      "Phone: " +
-      phone +
-      "\n" +
-
-      "Company / Website: " +
-      (company || "Not provided");
-
-
-    var waUrl =
-      "https://wa.me/" +
-      WHATSAPP_NUMBER +
-      "?text=" +
-      encodeURIComponent(
-        message
-      );
+      "OPENING WHATSAPP...";
 
 
     /*
-      Prepare fallback button.
+       Try to open WhatsApp.
+
+       Using location.href works well on mobile
+       because it allows the phone to hand off to
+       the WhatsApp application.
     */
 
-    waFallbackBtn.href =
-      waUrl;
+    window.location.href = waUrl;
+
+  })
 
 
-    /* ==================================================
-       SEND TO GOOGLE SHEET
-    ================================================== */
+  .catch(function(error) {
 
-    fetch(
-      GOOGLE_SCRIPT_URL,
-      {
-
-        method: "POST",
-
-        mode: "no-cors",
-
-        headers: {
-          "Content-Type":
-            "text/plain;charset=utf-8"
-        },
-
-        body:
-          JSON.stringify(data)
-
-      }
-    )
-
-    .then(
-      function() {
-
-        /*
-          Show WhatsApp fallback.
-        */
-
-        fallbackContainer.classList.remove(
-          "hidden"
-        );
-
-
-        submitBtn.innerText =
-          "OPENING WHATSAPP...";
-
-
-        /*
-          Open WhatsApp in a new tab.
-        */
-
-        window.open(
-          waUrl,
-          "_blank"
-        );
-
-
-        submitBtn.innerText =
-          "WHATSAPP OPENED ✓";
-
-
-        submitBtn.disabled =
-          false;
-
-      }
-    )
-
-    .catch(
-      function(error) {
-
-        console.error(
-          "Google Apps Script Error:",
-          error
-        );
-
-
-        /*
-          Even if the Sheet request fails,
-          give the user the WhatsApp option.
-        */
-
-        statusMsg.innerText =
-          "We couldn't confirm the audit submission. Please use the WhatsApp button below.";
-
-        statusMsg.classList.remove(
-          "hidden"
-        );
-
-
-        fallbackContainer.classList.remove(
-          "hidden"
-        );
-
-
-        submitBtn.disabled =
-          false;
-
-
-        submitBtn.innerText =
-          "SUBMIT & CONTINUE TO WHATSAPP →";
-
-      }
+    console.error(
+      "Google Apps Script Error:",
+      error
     );
 
+
+    statusMsg.innerText =
+      "Something went wrong. Please try again.";
+
+
+    statusMsg.classList.remove("hidden");
+
+
+    submitBtn.disabled = false;
+
+
+    submitBtn.innerText =
+      "SUBMIT & CONTINUE TO WHATSAPP →";
+
+  });
+
+});
+
+
+/* =========================================================
+   CLOSE MODAL WHEN CLICKING BACKDROP
+========================================================= */
+
+modal.addEventListener("click", function(e) {
+
+  if (e.target === modal) {
+
+    closeModal();
+
   }
-);
+
+});
 
 
-/* ==================================================
-   INITIALIZE QUIZ
-================================================== */
+/* =========================================================
+   ESCAPE KEY
+========================================================= */
 
-showStep(1);
+document.addEventListener("keydown", function(e) {
+
+  if (e.key === "Escape") {
+
+    closeModal();
+
+  }
+
+});
+
 
 </script>
 
