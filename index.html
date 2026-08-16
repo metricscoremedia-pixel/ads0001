@@ -36,10 +36,18 @@
     }
 
     @keyframes pulse-glow {
-      0%, 100% { box-shadow: 0 0 15px rgba(52, 211, 153, 0.4); }
-      50% { box-shadow: 0 0 35px rgba(52, 211, 153, 0.85); }
+      0%, 100% {
+        box-shadow: 0 0 15px rgba(52, 211, 153, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 35px rgba(52, 211, 153, 0.85);
+      }
     }
-    .animate-pulse-glow { animation: pulse-glow 2s infinite; }
+
+    .animate-pulse-glow {
+      animation: pulse-glow 2s infinite;
+    }
   </style>
 </head>
 
@@ -521,7 +529,6 @@
 
   <div class="w-full max-w-md bg-[#0d0f12] border-2 border-emerald-400/60 rounded-3xl p-7 sm:p-9 relative shadow-[0_0_50px_rgba(52,211,153,0.3)] transition-all">
 
-
     <button
       onclick="closeModal()"
       class="absolute top-5 right-5 text-zinc-400 hover:text-white text-xl font-bold p-1 transition"
@@ -530,36 +537,51 @@
     </button>
 
     <!-- PROGRESS BAR -->
+
     <div class="w-full bg-white/10 h-1.5 rounded-full mb-6 overflow-hidden">
-      <div id="progress-bar" class="bg-emerald-400 h-full w-1/2 transition-all duration-300"></div>
+      <div
+        id="progress-bar"
+        class="bg-emerald-400 h-full w-1/2 transition-all duration-300"
+      ></div>
     </div>
 
 
     <form id="lead-form">
 
-      <!-- STEP 1: QUIZ QUESTION -->
+      <!-- STEP 1 -->
+
       <div id="step-1" class="space-y-4">
+
         <div class="mb-4">
+
           <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-2">
             Step 1 of 2
           </span>
+
           <h2 class="text-2xl font-black tracking-tight text-white">
             What is your primary goal right now?
           </h2>
+
           <p class="text-zinc-400 text-xs mt-1">
             Select an option to personalize your audit strategy.
           </p>
+
         </div>
 
+
         <div class="space-y-2.5">
+
           <button
             type="button"
             onclick="selectGoal('Scale Meta/Google Ads')"
             class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
           >
             <span>🚀 Scale Meta / Google Ads</span>
-            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">→</span>
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
+              →
+            </span>
           </button>
+
 
           <button
             type="button"
@@ -567,8 +589,11 @@
             class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
           >
             <span>🎯 Generate More Qualified Leads</span>
-            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">→</span>
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
+              →
+            </span>
           </button>
+
 
           <button
             type="button"
@@ -576,24 +601,39 @@
             class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
           >
             <span>📉 Lower Acquisition Cost (CPL/CPA)</span>
-            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">→</span>
+            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
+              →
+            </span>
           </button>
+
         </div>
+
       </div>
 
-      <!-- STEP 2: LEAD CONTACT INFO -->
+
+      <!-- STEP 2 -->
+
       <div id="step-2" class="hidden space-y-3.5">
+
         <div class="mb-4">
+
           <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-2">
             Step 2 of 2
           </span>
+
           <h2 class="text-2xl font-black tracking-tight text-white">
-            Where should we send your <span class="text-emerald-400 green-glow">Audit?</span>
+            Where should we send your
+            <span class="text-emerald-400 green-glow">
+              Audit?
+            </span>
           </h2>
+
           <p class="text-zinc-400 text-xs mt-1">
             Fill in details below to continue to WhatsApp.
           </p>
+
         </div>
+
 
         <input
           type="text"
@@ -603,6 +643,7 @@
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
+
         <input
           type="email"
           id="email"
@@ -610,6 +651,7 @@
           placeholder="Business Email *"
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
+
 
         <input
           type="tel"
@@ -619,12 +661,14 @@
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
+
         <input
           type="text"
           id="company"
           placeholder="Website / Company"
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
+
 
         <button
           type="submit"
@@ -634,10 +678,12 @@
           SUBMIT & CONTINUE TO WHATSAPP →
         </button>
 
+
         <p class="text-[10px] text-zinc-500 text-center mt-2 leading-relaxed">
           By submitting, you agree to receive WhatsApp communications.
           We respect your privacy and never share your details.
         </p>
+
       </div>
 
     </form>
@@ -675,7 +721,6 @@
       MetricScore Media is an independent marketing agency.
     </p>
 
-
   </div>
 
 </div>
@@ -711,31 +756,126 @@ var selectedGoal = "";
 
 
 /* ==================================================
-   MODAL & MULTI-STEP LOGIC
+   MOBILE DETECTION
+================================================== */
+
+function isMobileDevice() {
+  return window.matchMedia("(max-width: 767px)").matches;
+}
+
+
+/* ==================================================
+   MODAL
 ================================================== */
 
 var modal = document.getElementById("lead-modal");
 
+
 function openModal() {
+
   modal.classList.remove("hidden");
   modal.classList.add("flex");
+
   hasPoppedUp = true;
+
 }
+
 
 function closeModal() {
+
   modal.classList.add("hidden");
   modal.classList.remove("flex");
+
 }
 
+
+/* ==================================================
+   MULTI-STEP LOGIC
+================================================== */
+
 function selectGoal(goal) {
+
   selectedGoal = goal;
-  
-  // 切换到 Step 2
+
   document.getElementById("step-1").classList.add("hidden");
+
   document.getElementById("step-2").classList.remove("hidden");
-  
-  // 更新进度条到 100%
+
   document.getElementById("progress-bar").style.width = "100%";
+
+}
+
+
+/* ==================================================
+   MOBILE EXIT-INTENT
+   BACK BUTTON / BACK NAVIGATION
+================================================== */
+
+/*
+  Mobile browsers do not have a true mouse-leave
+  event like desktop browsers.
+
+  Instead, we create a temporary browser history
+  state. When the visitor presses the mobile
+  back button, popstate fires and we show the
+  audit popup.
+
+  This only runs on mobile devices.
+*/
+
+if (isMobileDevice()) {
+
+  /*
+    Add a temporary history state.
+
+    The URL does not change.
+  */
+
+  history.pushState(
+    {
+      metricScoreExitIntent: true
+    },
+    "",
+    window.location.href
+  );
+
+
+  window.addEventListener("popstate", function () {
+
+    /*
+      If the popup has not been shown yet,
+      intercept the first back action.
+    */
+
+    if (!hasPoppedUp) {
+
+      openModal();
+
+      /*
+        Add the history state again so the user
+        remains on the page after the popup opens.
+      */
+
+      history.pushState(
+        {
+          metricScoreExitIntent: true
+        },
+        "",
+        window.location.href
+      );
+
+    }
+
+    /*
+      If hasPoppedUp is already true, we do NOT
+      push another state.
+
+      Therefore the next back press will allow
+      the visitor to actually leave the page.
+    */
+
+  });
+
 }
 
 
@@ -744,37 +884,34 @@ function selectGoal(goal) {
 ================================================== */
 
 function getUrlParam(param) {
-  var params = new URLSearchParams(window.location.search);
+
+  var params = new URLSearchParams(
+    window.location.search
+  );
+
   return params.get(param) || "Direct/None";
+
 }
-
-
-/* ==================================================
-   EXIT INTENT & AUTO POPUP
-================================================== */
-
-document.addEventListener("mouseleave", function(e) {
-  if (e.clientY < 10 && !hasPoppedUp) {
-    openModal();
-  }
-});
-
-setTimeout(function() {
-  if (!hasPoppedUp) {
-    openModal();
-  }
-}, 12000);
 
 
 /* ==================================================
    FORM ELEMENTS
 ================================================== */
 
-var form = document.getElementById("lead-form");
-var submitBtn = document.getElementById("submit-btn");
-var statusMsg = document.getElementById("status-msg");
-var fallbackContainer = document.getElementById("fallback-container");
-var waFallbackBtn = document.getElementById("wa-fallback-btn");
+var form =
+document.getElementById("lead-form");
+
+var submitBtn =
+document.getElementById("submit-btn");
+
+var statusMsg =
+document.getElementById("status-msg");
+
+var fallbackContainer =
+document.getElementById("fallback-container");
+
+var waFallbackBtn =
+document.getElementById("wa-fallback-btn");
 
 
 /* ==================================================
@@ -782,67 +919,202 @@ var waFallbackBtn = document.getElementById("wa-fallback-btn");
 ================================================== */
 
 form.addEventListener("submit", function(e) {
+
   e.preventDefault();
 
+
+  /*
+    Make sure a goal was selected.
+  */
+
+  if (!selectedGoal) {
+
+    statusMsg.innerText =
+      "Please select your primary goal.";
+
+    statusMsg.classList.remove("hidden");
+
+    return;
+
+  }
+
+
   submitBtn.disabled = true;
-  submitBtn.innerText = "PROCESSING...";
 
-  var name = document.getElementById("name").value.trim();
-  var email = document.getElementById("email").value.trim();
-  var phone = document.getElementById("phone").value.trim();
-  var company = document.getElementById("company").value.trim();
+  submitBtn.innerText =
+    "PROCESSING...";
 
-  var timeSpent = Math.round((Date.now() - startTime) / 1000);
 
-  /* DATA FOR GOOGLE SHEET */
+  var name =
+    document.getElementById("name").value.trim();
+
+
+  var email =
+    document.getElementById("email").value.trim();
+
+
+  var phone =
+    document.getElementById("phone").value.trim();
+
+
+  var company =
+    document.getElementById("company").value.trim();
+
+
+  var timeSpent =
+    Math.round(
+      (Date.now() - startTime) / 1000
+    );
+
+
+  /* ==================================================
+     DATA FOR GOOGLE SHEET
+  ================================================== */
+
   var data = {
+
     goal: selectedGoal,
+
     name: name,
+
     email: email,
+
     phone: phone,
+
     company: company,
+
     source: getUrlParam("utm_source"),
+
     medium: getUrlParam("utm_medium"),
+
     campaign: getUrlParam("utm_campaign"),
+
     content: getUrlParam("utm_content"),
+
     device: navigator.userAgent,
+
     language: navigator.language,
+
     timeSpent: timeSpent + "s"
+
   };
 
-  /* WHATSAPP MESSAGE */
+
+  /* ==================================================
+     WHATSAPP MESSAGE
+  ================================================== */
+
   var message =
     "Hi MetricScore Media! " +
     "I just requested a free strategy audit.\n\n" +
-    "Goal: " + selectedGoal + "\n" +
-    "Name: " + name + "\n" +
-    "Email: " + email + "\n" +
-    "Phone: " + phone + "\n" +
-    "Company / Website: " + (company || "N/A");
 
-  var waUrl = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
+    "Goal: " + selectedGoal + "\n" +
+
+    "Name: " + name + "\n" +
+
+    "Email: " + email + "\n" +
+
+    "Phone: " + phone + "\n" +
+
+    "Company / Website: " +
+    (company || "N/A");
+
+
+  var waUrl =
+    "https://wa.me/" +
+    WHATSAPP_NUMBER +
+    "?text=" +
+    encodeURIComponent(message);
+
+
+  /*
+    Set fallback button.
+  */
 
   waFallbackBtn.href = waUrl;
 
-  /* SEND TO GOOGLE SHEET */
+
+  /* ==================================================
+     SEND TO GOOGLE SHEET
+  ================================================== */
+
   fetch(GOOGLE_SCRIPT_URL, {
+
     method: "POST",
+
     mode: "no-cors",
-    headers: { "Content-Type": "text/plain;charset=utf-8" },
+
+    headers: {
+      "Content-Type":
+        "text/plain;charset=utf-8"
+    },
+
     body: JSON.stringify(data)
+
   })
+
   .then(function() {
-    fallbackContainer.classList.remove("hidden");
-    submitBtn.innerText = "OPENING WHATSAPP...";
-    window.location.href = waUrl;
-  })
-  .catch(function(error) {
-    console.error("Google Apps Script Error:", error);
-    statusMsg.innerText = "Something went wrong. Please try again.";
-    statusMsg.classList.remove("hidden");
+
+    /*
+      Show fallback before opening WhatsApp.
+    */
+
+    fallbackContainer.classList.remove(
+      "hidden"
+    );
+
+    submitBtn.innerText =
+      "OPENING WHATSAPP...";
+
+
+    /*
+      Open WhatsApp in a new tab/window
+      instead of replacing the landing page.
+    */
+
+    window.open(
+      waUrl,
+      "_blank"
+    );
+
+
+    /*
+      Change button so user knows the lead
+      has been processed.
+    */
+
+    submitBtn.innerText =
+      "WHATSAPP OPENED ✓";
+
     submitBtn.disabled = false;
-    submitBtn.innerText = "SUBMIT & CONTINUE TO WHATSAPP →";
+
+  })
+
+  .catch(function(error) {
+
+    console.error(
+      "Google Apps Script Error:",
+      error
+    );
+
+
+    statusMsg.innerText =
+      "Something went wrong. Please try again.";
+
+
+    statusMsg.classList.remove(
+      "hidden"
+    );
+
+
+    submitBtn.disabled = false;
+
+
+    submitBtn.innerText =
+      "SUBMIT & CONTINUE TO WHATSAPP →";
+
   });
+
 });
 
 </script>
