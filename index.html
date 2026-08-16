@@ -48,6 +48,15 @@
     .animate-pulse-glow {
       animation: pulse-glow 2s infinite;
     }
+
+    .quiz-option.selected {
+      border-color: rgb(52, 211, 153);
+      background: rgba(52, 211, 153, 0.12);
+    }
+
+    .quiz-option.selected .option-arrow {
+      opacity: 1;
+    }
   </style>
 </head>
 
@@ -131,13 +140,25 @@
       </h1>
 
 
-      <p class="mt-10 max-w-2xl text-lg sm:text-xl text-zinc-400 leading-relaxed">
+      <!-- ================= INTRODUCTION ================= -->
 
-        We build performance marketing systems that acquire,
-        convert and scale customers profitably.
+      <p class="mt-10 max-w-3xl text-lg sm:text-xl text-zinc-300 leading-relaxed">
+
+        We help businesses turn paid advertising into predictable growth
+        through smarter campaigns, better funnels and continuous optimization.
 
       </p>
 
+      <p class="mt-4 max-w-2xl text-sm sm:text-base text-zinc-500 leading-relaxed">
+
+        From lead generation to customer acquisition, we focus on the numbers
+        that actually matter — qualified leads, acquisition cost, conversion
+        and revenue.
+
+      </p>
+
+
+      <!-- ================= CTA ================= -->
 
       <div class="mt-10 flex flex-col sm:flex-row gap-4">
 
@@ -160,6 +181,8 @@
 
     </div>
 
+
+    <!-- ================= HERO STATS ================= -->
 
     <div class="mt-24 grid grid-cols-2 md:grid-cols-4 border-t border-white/10 pt-8">
 
@@ -211,10 +234,13 @@
       </p>
 
       <h2 class="text-4xl sm:text-6xl font-black tracking-tight mt-4">
+
         Built around
+
         <span class="text-zinc-500">
           performance.
         </span>
+
       </h2>
 
     </div>
@@ -329,31 +355,54 @@
         <div class="grid grid-cols-2 gap-4">
 
           <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
-            <div class="text-4xl font-black green-glow">ROAS</div>
+
+            <div class="text-4xl font-black green-glow">
+              ROAS
+            </div>
+
             <p class="text-zinc-500 text-sm mt-3">
               Revenue efficiency
             </p>
+
           </div>
 
+
           <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
-            <div class="text-4xl font-black green-glow">CPL</div>
+
+            <div class="text-4xl font-black green-glow">
+              CPL
+            </div>
+
             <p class="text-zinc-500 text-sm mt-3">
               Acquisition cost
             </p>
+
           </div>
 
+
           <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
-            <div class="text-4xl font-black green-glow">CTR</div>
+
+            <div class="text-4xl font-black green-glow">
+              CTR
+            </div>
+
             <p class="text-zinc-500 text-sm mt-3">
               Creative efficiency
             </p>
+
           </div>
 
+
           <div class="border border-white/10 rounded-2xl p-6 bg-white/[0.02]">
-            <div class="text-4xl font-black green-glow">CRO</div>
+
+            <div class="text-4xl font-black green-glow">
+              CRO
+            </div>
+
             <p class="text-zinc-500 text-sm mt-3">
               Conversion performance
             </p>
+
           </div>
 
         </div>
@@ -400,14 +449,20 @@
 
         <div class="border-t border-white/10 py-7 flex gap-8">
 
-          <span class="text-emerald-400 font-bold">01</span>
+          <span class="text-emerald-400 font-bold">
+            01
+          </span>
 
           <div>
-            <h3 class="font-bold text-xl">Audit</h3>
+
+            <h3 class="font-bold text-xl">
+              Audit
+            </h3>
 
             <p class="text-zinc-500 mt-2">
               Understand the current funnel, campaigns and acquisition economics.
             </p>
+
           </div>
 
         </div>
@@ -415,14 +470,20 @@
 
         <div class="border-t border-white/10 py-7 flex gap-8">
 
-          <span class="text-emerald-400 font-bold">02</span>
+          <span class="text-emerald-400 font-bold">
+            02
+          </span>
 
           <div>
-            <h3 class="font-bold text-xl">Strategy</h3>
+
+            <h3 class="font-bold text-xl">
+              Strategy
+            </h3>
 
             <p class="text-zinc-500 mt-2">
               Build the audience, creative and campaign architecture.
             </p>
+
           </div>
 
         </div>
@@ -430,14 +491,20 @@
 
         <div class="border-t border-white/10 py-7 flex gap-8">
 
-          <span class="text-emerald-400 font-bold">03</span>
+          <span class="text-emerald-400 font-bold">
+            03
+          </span>
 
           <div>
-            <h3 class="font-bold text-xl">Launch</h3>
+
+            <h3 class="font-bold text-xl">
+              Launch
+            </h3>
 
             <p class="text-zinc-500 mt-2">
               Deploy campaigns and establish the measurement foundation.
             </p>
+
           </div>
 
         </div>
@@ -445,14 +512,20 @@
 
         <div class="border-t border-white/10 py-7 flex gap-8">
 
-          <span class="text-emerald-400 font-bold">04</span>
+          <span class="text-emerald-400 font-bold">
+            04
+          </span>
 
           <div>
-            <h3 class="font-bold text-xl">Optimize</h3>
+
+            <h3 class="font-bold text-xl">
+              Optimize
+            </h3>
 
             <p class="text-zinc-500 mt-2">
               Read the data, test aggressively and scale what works.
             </p>
+
           </div>
 
         </div>
@@ -520,50 +593,88 @@
 </footer>
 
 
-<!-- ================= MULTI-STEP QUIZ LEAD MODAL ================= -->
+<!-- ==================================================
+     MULTI-STEP QUIZ LEAD MODAL
+================================================== -->
 
 <div
   id="lead-modal"
-  class="fixed inset-0 z-50 hidden items-center justify-center p-5 modal-bg"
+  class="fixed inset-0 z-50 hidden items-center justify-center p-5 modal-bg overflow-y-auto"
 >
 
-  <div class="w-full max-w-md bg-[#0d0f12] border-2 border-emerald-400/60 rounded-3xl p-7 sm:p-9 relative shadow-[0_0_50px_rgba(52,211,153,0.3)] transition-all">
+  <div
+    class="w-full max-w-md bg-[#0d0f12] border-2 border-emerald-400/60 rounded-3xl p-7 sm:p-9 relative shadow-[0_0_50px_rgba(52,211,153,0.3)] my-8"
+  >
+
+    <!-- CLOSE BUTTON -->
 
     <button
       onclick="closeModal()"
       class="absolute top-5 right-5 text-zinc-400 hover:text-white text-xl font-bold p-1 transition"
+      aria-label="Close"
     >
       ✕
     </button>
 
+
     <!-- PROGRESS BAR -->
 
     <div class="w-full bg-white/10 h-1.5 rounded-full mb-6 overflow-hidden">
+
       <div
         id="progress-bar"
-        class="bg-emerald-400 h-full w-1/2 transition-all duration-300"
+        class="bg-emerald-400 h-full transition-all duration-300"
+        style="width: 16.66%;"
       ></div>
+
+    </div>
+
+
+    <!-- PROGRESS TEXT -->
+
+    <div class="flex justify-between items-center mb-6">
+
+      <span
+        id="step-label"
+        class="text-[11px] uppercase tracking-[0.2em] text-emerald-300 font-bold"
+      >
+        Step 1 of 6
+      </span>
+
+      <span
+        id="progress-percent"
+        class="text-[11px] text-zinc-500"
+      >
+        17%
+      </span>
+
     </div>
 
 
     <form id="lead-form">
 
-      <!-- STEP 1 -->
 
-      <div id="step-1" class="space-y-4">
+      <!-- ==================================================
+           STEP 1
+      ================================================== -->
 
-        <div class="mb-4">
+      <div
+        id="step-1"
+        class="quiz-step space-y-4"
+      >
 
-          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-2">
-            Step 1 of 2
+        <div class="mb-5">
+
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
+            Step 1 of 6
           </span>
 
           <h2 class="text-2xl font-black tracking-tight text-white">
             What is your primary goal right now?
           </h2>
 
-          <p class="text-zinc-400 text-xs mt-1">
-            Select an option to personalize your audit strategy.
+          <p class="text-zinc-400 text-xs mt-2">
+            Select the option that best describes what you want to improve.
           </p>
 
         </div>
@@ -573,36 +684,170 @@
 
           <button
             type="button"
-            onclick="selectGoal('Scale Meta/Google Ads')"
-            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
+            onclick="selectOption(1, 'goal', 'Scale Meta / Google Ads')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
           >
-            <span>🚀 Scale Meta / Google Ads</span>
-            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
-              →
+
+            <span>
+              🚀 Scale Meta / Google Ads
+            </span>
+
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(1, 'goal', 'Generate More Qualified Leads')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+
+            <span>
+              🎯 Generate More Qualified Leads
+            </span>
+
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(1, 'goal', 'Lower Acquisition Cost (CPL / CPA)')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+
+            <span>
+              📉 Lower Acquisition Cost (CPL / CPA)
+            </span>
+
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(1, 'goal', 'Increase Sales / Revenue')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+
+            <span>
+              💰 Increase Sales / Revenue
+            </span>
+
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================================
+           STEP 2
+      ================================================== -->
+
+      <div
+        id="step-2"
+        class="quiz-step hidden space-y-4"
+      >
+
+        <div class="mb-5">
+
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
+            Step 2 of 6
+          </span>
+
+          <h2 class="text-2xl font-black tracking-tight text-white">
+            What is your approximate monthly ad spend?
+          </h2>
+
+          <p class="text-zinc-400 text-xs mt-2">
+            This helps us understand your current acquisition scale.
+          </p>
+
+        </div>
+
+
+        <div class="space-y-2.5">
+
+          <button
+            type="button"
+            onclick="selectOption(2, 'adSpend', 'Under RM3,000')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              Under RM3,000
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
             </span>
           </button>
 
 
           <button
             type="button"
-            onclick="selectGoal('Generate More Qualified Leads')"
-            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
+            onclick="selectOption(2, 'adSpend', 'RM3,000 - RM10,000')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
           >
-            <span>🎯 Generate More Qualified Leads</span>
-            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
-              →
+            <span>
+              RM3,000 – RM10,000
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
             </span>
           </button>
 
 
           <button
             type="button"
-            onclick="selectGoal('Lower Acquisition Cost (CPL/CPA)')"
-            class="w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center group"
+            onclick="selectOption(2, 'adSpend', 'RM10,000 - RM30,000')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
           >
-            <span>📉 Lower Acquisition Cost (CPL/CPA)</span>
-            <span class="text-emerald-400 opacity-0 group-hover:opacity-100 transition">
-              →
+            <span>
+              RM10,000 – RM30,000
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(2, 'adSpend', 'RM30,000+')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              RM30,000+
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(2, 'adSpend', 'Not running paid ads yet')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              Not running paid ads yet
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
             </span>
           </button>
 
@@ -611,64 +856,389 @@
       </div>
 
 
-      <!-- STEP 2 -->
+      <!-- ==================================================
+           STEP 3
+      ================================================== -->
 
-      <div id="step-2" class="hidden space-y-3.5">
+      <div
+        id="step-3"
+        class="quiz-step hidden space-y-4"
+      >
 
-        <div class="mb-4">
+        <div class="mb-5">
 
-          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-2">
-            Step 2 of 2
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
+            Step 3 of 6
           </span>
 
           <h2 class="text-2xl font-black tracking-tight text-white">
-            Where should we send your
-            <span class="text-emerald-400 green-glow">
-              Audit?
-            </span>
+            How many leads do you generate each month?
           </h2>
 
-          <p class="text-zinc-400 text-xs mt-1">
-            Fill in details below to continue to WhatsApp.
+          <p class="text-zinc-400 text-xs mt-2">
+            An approximate number is perfectly fine.
           </p>
 
         </div>
 
+
+        <div class="space-y-2.5">
+
+          <button
+            type="button"
+            onclick="selectOption(3, 'leadVolume', 'Under 20 leads / month')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              Under 20 leads / month
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(3, 'leadVolume', '20 - 50 leads / month')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              20 – 50 leads / month
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(3, 'leadVolume', '50 - 100 leads / month')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              50 – 100 leads / month
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(3, 'leadVolume', '100+ leads / month')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              100+ leads / month
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(3, 'leadVolume', 'Not generating leads yet')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              Not generating leads yet
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================================
+           STEP 4
+      ================================================== -->
+
+      <div
+        id="step-4"
+        class="quiz-step hidden space-y-4"
+      >
+
+        <div class="mb-5">
+
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
+            Step 4 of 6
+          </span>
+
+          <h2 class="text-2xl font-black tracking-tight text-white">
+            What is your biggest marketing problem?
+          </h2>
+
+          <p class="text-zinc-400 text-xs mt-2">
+            Choose the problem that is hurting growth the most.
+          </p>
+
+        </div>
+
+
+        <div class="space-y-2.5">
+
+          <button
+            type="button"
+            onclick="selectOption(4, 'problem', 'Ads are not converting')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              ❌ Ads are not converting
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(4, 'problem', 'Leads are too expensive')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              📉 Leads are too expensive
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(4, 'problem', 'Leads are not qualified')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              🎯 Leads are not qualified
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(4, 'problem', 'Not enough leads')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              📊 Not enough leads
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(4, 'problem', 'I do not know what is working')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              🤔 I don't know what's working
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================================
+           STEP 5
+      ================================================== -->
+
+      <div
+        id="step-5"
+        class="quiz-step hidden space-y-4"
+      >
+
+        <div class="mb-5">
+
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
+            Step 5 of 6
+          </span>
+
+          <h2 class="text-2xl font-black tracking-tight text-white">
+            Which platforms are you currently using?
+          </h2>
+
+          <p class="text-zinc-400 text-xs mt-2">
+            Select the platform closest to your current setup.
+          </p>
+
+        </div>
+
+
+        <div class="space-y-2.5">
+
+          <button
+            type="button"
+            onclick="selectOption(5, 'platform', 'Meta Ads')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              📱 Meta Ads
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(5, 'platform', 'Google Ads')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              🔎 Google Ads
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(5, 'platform', 'Meta + Google Ads')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              🚀 Meta + Google Ads
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(5, 'platform', 'Other Paid Advertising')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              🌐 Other paid advertising
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+
+          <button
+            type="button"
+            onclick="selectOption(5, 'platform', 'Not running ads yet')"
+            class="quiz-option w-full text-left bg-black/60 border border-white/15 hover:border-emerald-400 hover:bg-emerald-400/10 rounded-xl px-4 py-3.5 text-sm font-semibold text-white transition flex justify-between items-center"
+          >
+            <span>
+              🌱 Not running ads yet
+            </span>
+            <span class="option-arrow text-emerald-400 opacity-0 transition">
+              ✓
+            </span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================================
+           STEP 6 - CONTACT
+      ================================================== -->
+
+      <div
+        id="step-6"
+        class="quiz-step hidden space-y-3.5"
+      >
+
+        <div class="mb-5">
+
+          <span class="inline-block bg-emerald-400/10 border border-emerald-400/30 text-emerald-300 text-[11px] uppercase tracking-[0.2em] font-extrabold px-3 py-1 rounded-full mb-3">
+            Step 6 of 6
+          </span>
+
+          <h2 class="text-2xl font-black tracking-tight text-white">
+            Let's prepare your
+            <span class="text-emerald-400 green-glow">
+              free audit.
+            </span>
+          </h2>
+
+          <p class="text-zinc-400 text-xs mt-2">
+            Enter your details and we'll continue with you on WhatsApp.
+          </p>
+
+        </div>
+
+
+        <!-- FULL NAME -->
 
         <input
           type="text"
           id="name"
           required
           placeholder="Full Name *"
+          autocomplete="name"
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
+
+        <!-- EMAIL -->
 
         <input
           type="email"
           id="email"
           required
-          placeholder="Business Email *"
+          placeholder="Business Email / Email *"
+          autocomplete="email"
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
+
+        <!-- PHONE -->
 
         <input
           type="tel"
           id="phone"
           required
           placeholder="Phone / WhatsApp *"
+          autocomplete="tel"
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
+
+        <!-- COMPANY OPTIONAL -->
 
         <input
           type="text"
           id="company"
-          placeholder="Website / Company"
+          placeholder="Website / Company (Optional)"
+          autocomplete="organization"
           class="w-full bg-black/60 border border-white/15 rounded-xl px-4 py-3 text-white text-sm placeholder-zinc-500 focus:outline-none focus:border-emerald-400 focus:ring-2 focus:ring-emerald-400/30 transition"
         >
 
+
+        <!-- SUBMIT -->
 
         <button
           type="submit"
@@ -686,14 +1256,49 @@
 
       </div>
 
+
+      <!-- ==================================================
+           QUIZ NAVIGATION
+      ================================================== -->
+
+      <div
+        id="quiz-navigation"
+        class="hidden mt-6 pt-5 border-t border-white/10 flex items-center justify-between"
+      >
+
+        <button
+          type="button"
+          id="back-btn"
+          onclick="previousStep()"
+          class="text-sm font-semibold text-zinc-400 hover:text-white transition"
+        >
+          ← Back
+        </button>
+
+
+        <button
+          type="button"
+          id="next-btn"
+          onclick="nextStep()"
+          class="bg-white text-black font-bold text-sm px-6 py-2.5 rounded-full hover:bg-emerald-400 transition"
+        >
+          Continue →
+        </button>
+
+      </div>
+
     </form>
 
 
+    <!-- STATUS MESSAGE -->
+
     <p
       id="status-msg"
-      class="hidden text-center text-xs mt-3 text-red-400 font-semibold"
+      class="hidden text-center text-xs mt-4 text-red-400 font-semibold"
     ></p>
 
+
+    <!-- WHATSAPP FALLBACK -->
 
     <div
       id="fallback-container"
@@ -726,7 +1331,9 @@
 </div>
 
 
-<!-- ================= JAVASCRIPT ================= -->
+<!-- ==================================================
+     JAVASCRIPT
+================================================== -->
 
 <script>
 
@@ -747,12 +1354,35 @@ var WHATSAPP_NUMBER =
 
 
 /* ==================================================
-   STATE & START TIME
+   QUIZ SETTINGS
 ================================================== */
 
-var startTime = Date.now();
+var TOTAL_STEPS = 6;
+
+var currentStep = 1;
+
 var hasPoppedUp = false;
-var selectedGoal = "";
+
+var startTime = Date.now();
+
+
+/* ==================================================
+   QUIZ ANSWERS
+================================================== */
+
+var quizAnswers = {
+
+  goal: "",
+
+  adSpend: "",
+
+  leadVolume: "",
+
+  problem: "",
+
+  platform: ""
+
+};
 
 
 /* ==================================================
@@ -760,149 +1390,38 @@ var selectedGoal = "";
 ================================================== */
 
 function isMobileDevice() {
-  return window.matchMedia("(max-width: 767px)").matches;
-}
 
-
-/* ==================================================
-   MODAL
-================================================== */
-
-var modal = document.getElementById("lead-modal");
-
-
-function openModal() {
-
-  modal.classList.remove("hidden");
-  modal.classList.add("flex");
-
-  hasPoppedUp = true;
-
-}
-
-
-function closeModal() {
-
-  modal.classList.add("hidden");
-  modal.classList.remove("flex");
+  return window.matchMedia(
+    "(max-width: 767px)"
+  ).matches;
 
 }
 
 
 /* ==================================================
-   MULTI-STEP LOGIC
+   MODAL ELEMENTS
 ================================================== */
 
-function selectGoal(goal) {
+var modal =
+document.getElementById("lead-modal");
 
-  selectedGoal = goal;
+var progressBar =
+document.getElementById("progress-bar");
 
-  document.getElementById("step-1").classList.add("hidden");
+var stepLabel =
+document.getElementById("step-label");
 
-  document.getElementById("step-2").classList.remove("hidden");
+var progressPercent =
+document.getElementById("progress-percent");
 
-  document.getElementById("progress-bar").style.width = "100%";
+var backBtn =
+document.getElementById("back-btn");
 
-}
+var nextBtn =
+document.getElementById("next-btn");
 
-
-/* ==================================================
-   MOBILE EXIT-INTENT
-   BACK BUTTON / BACK NAVIGATION
-================================================== */
-
-/*
-  Mobile browsers do not have a true mouse-leave
-  event like desktop browsers.
-
-  Instead, we create a temporary browser history
-  state. When the visitor presses the mobile
-  back button, popstate fires and we show the
-  audit popup.
-
-  This only runs on mobile devices.
-*/
-
-if (isMobileDevice()) {
-
-  /*
-    Add a temporary history state.
-
-    The URL does not change.
-  */
-
-  history.pushState(
-    {
-      metricScoreExitIntent: true
-    },
-    "",
-    window.location.href
-  );
-
-
-  window.addEventListener("popstate", function () {
-
-    /*
-      If the popup has not been shown yet,
-      intercept the first back action.
-    */
-
-    if (!hasPoppedUp) {
-
-      openModal();
-
-      /*
-        Add the history state again so the user
-        remains on the page after the popup opens.
-      */
-
-      history.pushState(
-        {
-          metricScoreExitIntent: true
-        },
-        "",
-        window.location.href
-      );
-
-    }
-
-    /*
-      If hasPoppedUp is already true, we do NOT
-      push another state.
-
-      Therefore the next back press will allow
-      the visitor to actually leave the page.
-    */
-
-  });
-
-}
-
-
-/* ==================================================
-   UTM PARAMETERS
-================================================== */
-
-function getUrlParam(param) {
-
-  var params = new URLSearchParams(
-    window.location.search
-  );
-
-  return params.get(param) || "Direct/None";
-
-}
-
-
-/* ==================================================
-   FORM ELEMENTS
-================================================== */
-
-var form =
-document.getElementById("lead-form");
-
-var submitBtn =
-document.getElementById("submit-btn");
+var quizNavigation =
+document.getElementById("quiz-navigation");
 
 var statusMsg =
 document.getElementById("status-msg");
@@ -915,207 +1434,700 @@ document.getElementById("wa-fallback-btn");
 
 
 /* ==================================================
-   FORM SUBMIT
+   OPEN MODAL
 ================================================== */
 
-form.addEventListener("submit", function(e) {
+function openModal() {
 
-  e.preventDefault();
+  modal.classList.remove("hidden");
+
+  modal.classList.add("flex");
+
+  hasPoppedUp = true;
+
+}
+
+
+/* ==================================================
+   CLOSE MODAL
+================================================== */
+
+function closeModal() {
+
+  modal.classList.add("hidden");
+
+  modal.classList.remove("flex");
+
+}
+
+
+/* ==================================================
+   UPDATE PROGRESS
+================================================== */
+
+function updateProgress() {
+
+  var percentage =
+    (currentStep / TOTAL_STEPS) * 100;
+
+  progressBar.style.width =
+    percentage + "%";
+
+  stepLabel.innerText =
+    "Step " +
+    currentStep +
+    " of " +
+    TOTAL_STEPS;
+
+  progressPercent.innerText =
+    Math.round(percentage) + "%";
 
 
   /*
-    Make sure a goal was selected.
+    Navigation is only shown on
+    Steps 2-5.
+
+    Step 1 automatically advances
+    when an option is selected.
+
+    Step 6 has the submit button.
   */
 
-  if (!selectedGoal) {
+  if (
+    currentStep >= 2 &&
+    currentStep <= 5
+  ) {
 
-    statusMsg.innerText =
-      "Please select your primary goal.";
+    quizNavigation.classList.remove(
+      "hidden"
+    );
 
-    statusMsg.classList.remove("hidden");
+    quizNavigation.classList.add(
+      "flex"
+    );
+
+  } else {
+
+    quizNavigation.classList.add(
+      "hidden"
+    );
+
+    quizNavigation.classList.remove(
+      "flex"
+    );
+
+  }
+
+
+  if (currentStep === 2) {
+
+    backBtn.classList.remove(
+      "invisible"
+    );
+
+  }
+
+
+  if (currentStep > 2) {
+
+    backBtn.classList.remove(
+      "invisible"
+    );
+
+  }
+
+
+  if (currentStep === 2) {
+
+    backBtn.classList.add(
+      "invisible"
+    );
+
+  }
+
+
+  if (currentStep >= 2 && currentStep <= 5) {
+
+    nextBtn.innerText =
+      "Continue →";
+
+  }
+
+}
+
+
+/* ==================================================
+   SHOW STEP
+================================================== */
+
+function showStep(stepNumber) {
+
+  document
+    .querySelectorAll(".quiz-step")
+    .forEach(function(step) {
+
+      step.classList.add("hidden");
+
+    });
+
+
+  var selectedStep =
+    document.getElementById(
+      "step-" + stepNumber
+    );
+
+
+  if (selectedStep) {
+
+    selectedStep.classList.remove(
+      "hidden"
+    );
+
+  }
+
+
+  currentStep =
+    stepNumber;
+
+
+  updateProgress();
+
+
+  statusMsg.classList.add(
+    "hidden"
+  );
+
+}
+
+
+/* ==================================================
+   SELECT QUIZ OPTION
+================================================== */
+
+function selectOption(
+  stepNumber,
+  field,
+  value
+) {
+
+  quizAnswers[field] =
+    value;
+
+
+  /*
+    Highlight selected button.
+  */
+
+  var currentStepElement =
+    document.getElementById(
+      "step-" + stepNumber
+    );
+
+
+  currentStepElement
+    .querySelectorAll(".quiz-option")
+    .forEach(function(button) {
+
+      button.classList.remove(
+        "selected"
+      );
+
+    });
+
+
+  event.currentTarget.classList.add(
+    "selected"
+  );
+
+
+  /*
+    Step 1 automatically continues.
+  */
+
+  if (stepNumber === 1) {
+
+    setTimeout(function() {
+
+      showStep(2);
+
+    }, 180);
+
+  }
+
+
+  /*
+    Steps 2-5 wait for the
+    Continue button.
+  */
+
+}
+
+
+/* ==================================================
+   NEXT STEP
+================================================== */
+
+function nextStep() {
+
+  if (currentStep >= 5) {
 
     return;
 
   }
 
 
-  submitBtn.disabled = true;
+  var fieldMap = {
 
-  submitBtn.innerText =
-    "PROCESSING...";
+    2: "adSpend",
 
+    3: "leadVolume",
 
-  var name =
-    document.getElementById("name").value.trim();
+    4: "problem",
 
-
-  var email =
-    document.getElementById("email").value.trim();
-
-
-  var phone =
-    document.getElementById("phone").value.trim();
-
-
-  var company =
-    document.getElementById("company").value.trim();
-
-
-  var timeSpent =
-    Math.round(
-      (Date.now() - startTime) / 1000
-    );
-
-
-  /* ==================================================
-     DATA FOR GOOGLE SHEET
-  ================================================== */
-
-  var data = {
-
-    goal: selectedGoal,
-
-    name: name,
-
-    email: email,
-
-    phone: phone,
-
-    company: company,
-
-    source: getUrlParam("utm_source"),
-
-    medium: getUrlParam("utm_medium"),
-
-    campaign: getUrlParam("utm_campaign"),
-
-    content: getUrlParam("utm_content"),
-
-    device: navigator.userAgent,
-
-    language: navigator.language,
-
-    timeSpent: timeSpent + "s"
+    5: "platform"
 
   };
 
 
-  /* ==================================================
-     WHATSAPP MESSAGE
-  ================================================== */
-
-  var message =
-    "Hi MetricScore Media! " +
-    "I just requested a free strategy audit.\n\n" +
-
-    "Goal: " + selectedGoal + "\n" +
-
-    "Name: " + name + "\n" +
-
-    "Email: " + email + "\n" +
-
-    "Phone: " + phone + "\n" +
-
-    "Company / Website: " +
-    (company || "N/A");
+  var currentField =
+    fieldMap[currentStep];
 
 
-  var waUrl =
-    "https://wa.me/" +
-    WHATSAPP_NUMBER +
-    "?text=" +
-    encodeURIComponent(message);
-
-
-  /*
-    Set fallback button.
-  */
-
-  waFallbackBtn.href = waUrl;
-
-
-  /* ==================================================
-     SEND TO GOOGLE SHEET
-  ================================================== */
-
-  fetch(GOOGLE_SCRIPT_URL, {
-
-    method: "POST",
-
-    mode: "no-cors",
-
-    headers: {
-      "Content-Type":
-        "text/plain;charset=utf-8"
-    },
-
-    body: JSON.stringify(data)
-
-  })
-
-  .then(function() {
-
-    /*
-      Show fallback before opening WhatsApp.
-    */
-
-    fallbackContainer.classList.remove(
-      "hidden"
-    );
-
-    submitBtn.innerText =
-      "OPENING WHATSAPP...";
-
-
-    /*
-      Open WhatsApp in a new tab/window
-      instead of replacing the landing page.
-    */
-
-    window.open(
-      waUrl,
-      "_blank"
-    );
-
-
-    /*
-      Change button so user knows the lead
-      has been processed.
-    */
-
-    submitBtn.innerText =
-      "WHATSAPP OPENED ✓";
-
-    submitBtn.disabled = false;
-
-  })
-
-  .catch(function(error) {
-
-    console.error(
-      "Google Apps Script Error:",
-      error
-    );
-
+  if (
+    currentField &&
+    !quizAnswers[currentField]
+  ) {
 
     statusMsg.innerText =
-      "Something went wrong. Please try again.";
-
+      "Please select an option to continue.";
 
     statusMsg.classList.remove(
       "hidden"
     );
 
+    return;
 
-    submitBtn.disabled = false;
+  }
 
+
+  showStep(
+    currentStep + 1
+  );
+
+}
+
+
+/* ==================================================
+   PREVIOUS STEP
+================================================== */
+
+function previousStep() {
+
+  if (currentStep <= 1) {
+
+    return;
+
+  }
+
+
+  showStep(
+    currentStep - 1
+  );
+
+}
+
+
+/* ==================================================
+   MOBILE EXIT INTENT
+   BACK BUTTON
+================================================== */
+
+if (isMobileDevice()) {
+
+  /*
+    Add temporary history state.
+
+    The visitor remains on the same URL.
+  */
+
+  history.pushState(
+    {
+      metricScoreExitIntent: true
+    },
+    "",
+    window.location.href
+  );
+
+
+  window.addEventListener(
+    "popstate",
+    function() {
+
+      /*
+        Only show the popup once.
+
+        The next back press will
+        allow the visitor to leave.
+      */
+
+      if (!hasPoppedUp) {
+
+        openModal();
+
+
+        history.pushState(
+          {
+            metricScoreExitIntent: true
+          },
+          "",
+          window.location.href
+        );
+
+      }
+
+    }
+  );
+
+}
+
+
+/* ==================================================
+   UTM PARAMETERS
+================================================== */
+
+function getUrlParam(param) {
+
+  var params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  return (
+    params.get(param) ||
+    "Direct/None"
+  );
+
+}
+
+
+/* ==================================================
+   FORM ELEMENTS
+================================================== */
+
+var form =
+document.getElementById(
+  "lead-form"
+);
+
+var submitBtn =
+document.getElementById(
+  "submit-btn"
+);
+
+
+/* ==================================================
+   FORM SUBMIT
+================================================== */
+
+form.addEventListener(
+  "submit",
+  function(e) {
+
+    e.preventDefault();
+
+
+    /*
+      Make sure all quiz answers exist.
+    */
+
+    if (
+      !quizAnswers.goal ||
+      !quizAnswers.adSpend ||
+      !quizAnswers.leadVolume ||
+      !quizAnswers.problem ||
+      !quizAnswers.platform
+    ) {
+
+      statusMsg.innerText =
+        "Please complete the quiz before submitting.";
+
+      statusMsg.classList.remove(
+        "hidden"
+      );
+
+      return;
+
+    }
+
+
+    submitBtn.disabled = true;
 
     submitBtn.innerText =
-      "SUBMIT & CONTINUE TO WHATSAPP →";
+      "PROCESSING...";
 
-  });
 
-});
+    /* ==================================================
+       CONTACT INFORMATION
+    ================================================== */
+
+    var name =
+      document
+        .getElementById("name")
+        .value
+        .trim();
+
+
+    var email =
+      document
+        .getElementById("email")
+        .value
+        .trim();
+
+
+    var phone =
+      document
+        .getElementById("phone")
+        .value
+        .trim();
+
+
+    var company =
+      document
+        .getElementById("company")
+        .value
+        .trim();
+
+
+    var timeSpent =
+      Math.round(
+        (Date.now() - startTime) / 1000
+      );
+
+
+    /* ==================================================
+       GOOGLE SHEET DATA
+    ================================================== */
+
+    var data = {
+
+      goal:
+        quizAnswers.goal,
+
+      adSpend:
+        quizAnswers.adSpend,
+
+      leadVolume:
+        quizAnswers.leadVolume,
+
+      problem:
+        quizAnswers.problem,
+
+      platform:
+        quizAnswers.platform,
+
+      name:
+        name,
+
+      email:
+        email,
+
+      phone:
+        phone,
+
+      company:
+        company,
+
+      source:
+        getUrlParam("utm_source"),
+
+      medium:
+        getUrlParam("utm_medium"),
+
+      campaign:
+        getUrlParam("utm_campaign"),
+
+      content:
+        getUrlParam("utm_content"),
+
+      device:
+        navigator.userAgent,
+
+      language:
+        navigator.language,
+
+      timeSpent:
+        timeSpent + "s"
+
+    };
+
+
+    /* ==================================================
+       WHATSAPP MESSAGE
+    ================================================== */
+
+    var message =
+      "Hi MetricScore Media! " +
+      "I just requested a free strategy audit.\n\n" +
+
+      "PRIMARY GOAL\n" +
+      quizAnswers.goal +
+      "\n\n" +
+
+      "MONTHLY AD SPEND\n" +
+      quizAnswers.adSpend +
+      "\n\n" +
+
+      "MONTHLY LEADS\n" +
+      quizAnswers.leadVolume +
+      "\n\n" +
+
+      "BIGGEST MARKETING PROBLEM\n" +
+      quizAnswers.problem +
+      "\n\n" +
+
+      "CURRENT PLATFORM\n" +
+      quizAnswers.platform +
+      "\n\n" +
+
+      "CONTACT DETAILS\n" +
+      "Name: " +
+      name +
+      "\n" +
+
+      "Email: " +
+      email +
+      "\n" +
+
+      "Phone: " +
+      phone +
+      "\n" +
+
+      "Company / Website: " +
+      (company || "Not provided");
+
+
+    var waUrl =
+      "https://wa.me/" +
+      WHATSAPP_NUMBER +
+      "?text=" +
+      encodeURIComponent(
+        message
+      );
+
+
+    /*
+      Prepare fallback button.
+    */
+
+    waFallbackBtn.href =
+      waUrl;
+
+
+    /* ==================================================
+       SEND TO GOOGLE SHEET
+    ================================================== */
+
+    fetch(
+      GOOGLE_SCRIPT_URL,
+      {
+
+        method: "POST",
+
+        mode: "no-cors",
+
+        headers: {
+          "Content-Type":
+            "text/plain;charset=utf-8"
+        },
+
+        body:
+          JSON.stringify(data)
+
+      }
+    )
+
+    .then(
+      function() {
+
+        /*
+          Show WhatsApp fallback.
+        */
+
+        fallbackContainer.classList.remove(
+          "hidden"
+        );
+
+
+        submitBtn.innerText =
+          "OPENING WHATSAPP...";
+
+
+        /*
+          Open WhatsApp in a new tab.
+        */
+
+        window.open(
+          waUrl,
+          "_blank"
+        );
+
+
+        submitBtn.innerText =
+          "WHATSAPP OPENED ✓";
+
+
+        submitBtn.disabled =
+          false;
+
+      }
+    )
+
+    .catch(
+      function(error) {
+
+        console.error(
+          "Google Apps Script Error:",
+          error
+        );
+
+
+        /*
+          Even if the Sheet request fails,
+          give the user the WhatsApp option.
+        */
+
+        statusMsg.innerText =
+          "We couldn't confirm the audit submission. Please use the WhatsApp button below.";
+
+        statusMsg.classList.remove(
+          "hidden"
+        );
+
+
+        fallbackContainer.classList.remove(
+          "hidden"
+        );
+
+
+        submitBtn.disabled =
+          false;
+
+
+        submitBtn.innerText =
+          "SUBMIT & CONTINUE TO WHATSAPP →";
+
+      }
+    );
+
+  }
+);
+
+
+/* ==================================================
+   INITIALIZE QUIZ
+================================================== */
+
+showStep(1);
 
 </script>
 
