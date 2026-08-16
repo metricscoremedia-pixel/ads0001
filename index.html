@@ -1,0 +1,565 @@
+class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500"
+          >
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div>
+
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">
+            Business Email *
+          </label>
+
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="john@company.com"
+            class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500"
+          >
+
+        </div>
+
+
+        <!-- PHONE -->
+        <div>
+
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">
+            Phone / WhatsApp *
+          </label>
+
+          <input
+            type="tel"
+            id="phone"
+            required
+            placeholder="+1 555 000 0000"
+            class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500"
+          >
+
+        </div>
+
+
+        <!-- COMPANY -->
+        <div>
+
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">
+            Website / Company Name
+          </label>
+
+          <input
+            type="text"
+            id="company"
+            placeholder="yourcompany.com"
+            class="w-full bg-slate-900 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-emerald-500"
+          >
+
+        </div>
+
+
+        <!-- SUBMIT -->
+        <button
+          type="submit"
+          id="submit-btn"
+          class="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3.5 rounded-lg shadow-lg transition"
+        >
+          Submit & Connect via WhatsApp
+        </button>
+
+      </form>
+
+
+      <!-- STATUS -->
+      <p
+        id="status-msg"
+        class="text-center text-sm mt-3 hidden"
+      ></p>
+
+
+      <!-- FALLBACK -->
+      <div
+        id="fallback-container"
+        class="hidden text-center mt-4 pt-4 border-t border-slate-700"
+      >
+
+        <p class="text-xs text-slate-300 mb-2">
+          If WhatsApp did not open automatically:
+        </p>
+
+        <a
+          id="wa-fallback-btn"
+          href="#"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block bg-emerald-500 text-slate-950 font-extrabold px-6 py-2.5 rounded-lg text-sm"
+        >
+          Open WhatsApp Business Chat
+        </a>
+
+      </div>
+
+
+      <div class="mt-4 pt-3 border-t border-slate-700/50 text-[9px] text-slate-500 text-center">
+        MetricScore Media is an independent agency not affiliated with WhatsApp LLC, Meta, or TikTok.
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    /* ================================
+       YOUR CONFIGURATION
+       ================================ */
+
+    var GOOGLE_SCRIPT_URL =
+      "https://script.google.com/macros/s/AKfycbxmxMzVQioCiUOg8vll13HQajxgLTq2e3FUeFueTRWiPkf5CDS38SvMQdYjT2x9Peb91g/exec";
+
+    var WHATSAPP_NUMBER =
+      "60142406221";
+
+
+    /* ================================
+       TRACKING
+       ================================ */
+
+    var startTime = Date.now();
+
+    var hasPoppedUp = false;
+
+
+    /* ================================
+       MODAL
+       ================================ */
+
+    var modal =
+      document.getElementById("lead-modal");
+
+
+    function openModal() {
+
+      modal.classList.remove("hidden");
+
+      setTimeout(function() {
+
+        modal.classList.remove("opacity-0");
+
+      }, 10);
+
+      hasPoppedUp = true;
+    }
+
+
+    function closeModal() {
+
+      modal.classList.add("opacity-0");
+
+      setTimeout(function() {
+
+        modal.classList.add("hidden");
+
+      }, 300);
+
+    }
+
+
+    /* ================================
+       EXIT INTENT
+       ================================ */
+
+    document.addEventListener(
+      "mouseleave",
+      function(e) {
+
+        if (
+          e.clientY < 10 &&
+          !hasPoppedUp
+        ) {
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>MetricScore Media | Performance Advertising Agency</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+  <div id="main-content" class="min-h-screen">
+
+    <!-- NAVIGATION -->
+    <header class="max-w-6xl mx-auto px-6 py-6 flex justify-between items-center">
+
+      <div class="text-2xl font-extrabold text-white">
+        MetricScore<span class="text-blue-500">.</span>
+      </div>
+
+      <button
+        onclick="openModal()"
+        class="bg-emerald-600 hover:bg-emerald-500 text-white text-sm font-bold px-5 py-2.5 rounded-lg transition"
+      >
+        Get Free Audit
+      </button>
+
+    </header>
+
+
+    <!-- HERO -->
+    <section class="max-w-4xl mx-auto px-6 py-16 text-center">
+
+      <span class="text-emerald-400 font-semibold text-sm uppercase tracking-widest">
+        Performance Marketing Agency
+      </span>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-white mt-4 mb-6 leading-tight">
+        Scale Your Brand's ROI With Data-Driven Ads
+      </h1>
+
+      <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto mb-8">
+        We turn ad spend into high-margin profit for ambitious global businesses.
+        Stop wasting budget on dead clicks.
+      </p>
+
+      <button
+        onclick="openModal()"
+        class="bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-lg px-8 py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5"
+      >
+        Claim Your Free Strategy Audit →
+      </button>
+
+    </section>
+
+
+    <!-- STATS -->
+    <section class="max-w-5xl mx-auto px-6 py-12 border-t border-slate-800 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+
+      <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-800">
+        <div class="text-3xl font-bold text-emerald-400 mb-2">3.5X+</div>
+        <div class="text-sm text-slate-300 font-semibold">
+          Average Account ROAS
+        </div>
+      </div>
+
+      <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-800">
+        <div class="text-3xl font-bold text-emerald-400 mb-2">$10M+</div>
+        <div class="text-sm text-slate-300 font-semibold">
+          Managed Ad Spend
+        </div>
+      </div>
+
+      <div class="p-4 bg-slate-800/50 rounded-xl border border-slate-800">
+        <div class="text-3xl font-bold text-emerald-400 mb-2">24 Hours</div>
+        <div class="text-sm text-slate-300 font-semibold">
+          Fast Audit Turnaround
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+
+  <!-- LEAD MODAL -->
+  <div
+    id="lead-modal"
+    class="fixed inset-0 bg-slate-950/80 backdrop-blur-md flex items-center justify-center p-4 z-50 hidden opacity-0 transition-opacity duration-300"
+  >
+
+    <div class="bg-slate-800 border border-slate-700 w-full max-w-md rounded-2xl p-6 sm:p-8 shadow-2xl relative">
+
+      <!-- CLOSE -->
+      <button
+        onclick="closeModal()"
+        class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl font-bold p-1"
+      >
+        ✕
+      </button>
+
+
+      <div class="text-center mb-6">
+
+        <span class="inline-block bg-emerald-500/20 text-emerald-400 font-bold text-xs px-3 py-1 rounded-full uppercase mb-2">
+          Free Strategy Audit
+        </span>
+
+        <h2 class="text-2xl font-bold text-white">
+          Get Your Free Ad Audit
+        </h2>
+
+        <p class="text-slate-400 text-sm mt-1">
+          Submit your details and connect with our team on WhatsApp.
+        </p>
+
+      </div>
+
+
+      <!-- FORM -->
+      <form id="lead-form" class="space-y-4">
+
+        <!-- NAME -->
+        <div>
+
+          <label class="block text-xs font-semibold text-slate-300 uppercase mb-1">
+            Full Name *
+          </label>
+
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="John Doe"
+            }
+
+      }
+    );
+
+
+    /* ================================
+       AUTO POPUP
+       ================================ */
+
+    setTimeout(function() {
+
+      if (!hasPoppedUp) {
+
+        openModal();
+
+      }
+
+    }, 10000);
+
+
+    /* ================================
+       UTM
+       ================================ */
+
+    function getUrlParam(param) {
+
+      var params =
+        new URLSearchParams(
+          window.location.search
+        );
+
+      return (
+        params.get(param) ||
+        "Direct/None"
+      );
+
+    }
+
+
+    /* ================================
+       FORM
+       ================================ */
+
+    var form =
+      document.getElementById(
+        "lead-form"
+      );
+
+    var submitBtn =
+      document.getElementById(
+        "submit-btn"
+      );
+
+    var statusMsg =
+      document.getElementById(
+        "status-msg"
+      );
+
+    var fallbackContainer =
+      document.getElementById(
+        "fallback-container"
+      );
+
+    var waFallbackBtn =
+      document.getElementById(
+        "wa-fallback-btn"
+      );
+
+
+    /* ================================
+       SUBMIT
+       ================================ */
+
+    form.addEventListener(
+      "submit",
+      function(e) {
+
+        e.preventDefault();
+
+
+        submitBtn.disabled = true;
+
+        submitBtn.innerText =
+          "Processing...";
+
+
+        var name =
+          document.getElementById(
+            "name"
+          ).value.trim();
+
+
+        var email =
+          document.getElementById(
+            "email"
+          ).value.trim();
+
+
+        var phone =
+          document.getElementById(
+            "phone"
+          ).value.trim();
+
+
+        var company =
+          document.getElementById(
+            "company"
+          ).value.trim();
+
+
+        var timeSpent =
+          Math.round(
+            (
+              Date.now() -
+              startTime
+            ) / 1000
+          );
+
+
+        /* DATA */
+
+        var data = {
+
+          name: name,
+
+          email: email,
+
+          phone: phone,
+
+          company: company,
+
+          source:
+            getUrlParam(
+              "utm_source"
+            ),
+
+          medium:
+            getUrlParam(
+              "utm_medium"
+            ),
+
+          campaign:
+            getUrlParam(
+              "utm_campaign"
+            ),
+
+          content:
+            getUrlParam(
+              "utm_content"
+            ),
+
+          device:
+            navigator.userAgent,
+
+          language:
+            navigator.language,
+
+          timeSpent:
+            timeSpent + "s"
+
+        };
+
+
+        /* WHATSAPP */
+
+        var message =
+          "Hi MetricScore Media! " +
+          "I just requested a free ad audit on your website.\n\n" +
+
+          "Name: " +
+          name +
+          "\n" +
+
+          "Company: " +
+          (company || "N/A");
+
+
+        var waUrl =
+          "https://wa.me/" +
+          WHATSAPP_NUMBER +
+          "?text=" +
+          encodeURIComponent(message);
+
+
+        waFallbackBtn.href =
+          waUrl;
+
+
+        /* SEND TO GOOGLE */
+
+        fetch(
+          GOOGLE_SCRIPT_URL,
+          {
+
+            method: "POST",
+
+            mode: "no-cors",
+
+            headers: {
+              "Content-Type":
+                "text/plain;charset=utf-8"
+            },
+
+            body:
+              JSON.stringify(data)
+
+          }
+        )
+        .then(function() {
+
+          fallbackContainer.classList.remove(
+            "hidden"
+          );
+
+          window.location.href =
+            waUrl;
+
+        })
+        .catch(function(error) {
+
+          console.error(error);
+
+          statusMsg.innerText =
+            "Something went wrong. Please try again.";
+
+          statusMsg.className =
+            "text-center text-sm mt-3 text-red-400";
+
+          statusMsg.classList.remove(
+            "hidden"
+          );
+
+          submitBtn.disabled =
+            false;
+
+          submitBtn.innerText =
+            "Submit & Connect via WhatsApp";
+
+        });
+
+      }
+    );
+
+  </script>
+
+</body>
+</html>
+          openModal();
